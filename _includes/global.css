@@ -1,0 +1,12 @@
+:root {
+    --primary-color: #A1CCFF;
+    --secondary-color: #196638;
+    --tertiary-color: #FB93D0;
+    font-family: sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}

@@ -1,16 +1,19 @@
+--- 
+title: Jamila Akhtar Portfolio
+---
 <!doctype html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/bundle.css">
-        <title>Jamila Akhtar Portfolio!</title>        
+        <title>{{ title }}</title>        
     </head>
     <div class="container-outer">
         <div class="container">
             <div class="nav-wrapper">
                 <div class="nav-logo-wrapper">
-                    <picture><source type="image/webp" srcset="/.11ty/image/?src=images%2Flogo.svg&width=183&format=webp&via=transform 183w"><img src="/.11ty/image/?src=images%2Flogo.svg&width=183&format=jpeg&via=transform" alt="Main Logo" width="183" height="77"></picture>
+                    <img src="images/logo.svg" alt="Main Logo" />
                 </div>
                 <nav>
                     <ul>
@@ -25,13 +28,7 @@
     </div>
     <body>
         <div>
-            <h1>Jamila Akhtar Portfolio!</h1>
-<h2>Posts</h2>
-<ul>
-<li><a href="/post1/">First blog post</a></li>
-<li><a href="/post2/">Second blog post</a></li>
-</ul>
-
+            {{ content | safe }}
         </div>
     </body>
     <footer>
@@ -48,7 +45,7 @@
                     </nav>
                 </div>
                 <div class="col col-span-4">
-                    <picture><source type="image/webp" srcset="/.11ty/image/?src=images%2FFooter_logo.svg&width=101&format=webp&via=transform 101w"><img src="/.11ty/image/?src=images%2FFooter_logo.svg&width=101&format=jpeg&via=transform" alt="Footer Logo" width="101" height="101"></picture>
+                    <img src="images/Footer_logo.svg" alt="Footer Logo" />
                     <p class="footer-copyright-text">&copy; Jamila Y Akhtar 2025 All Rights Reserved</p>
                 </div>
                 <div class="col col-span-4">
