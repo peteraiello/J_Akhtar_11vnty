@@ -1,19 +1,16 @@
 --- 
 layout: "/layout/home.njk"
-title: Jamila Akhtar Portfolio! 
 hero: 
-    titleOne: "Branding."
-    titleTwo: "Graphics."
-    titleThree: "Illustration."
+    title: "Branding. Graphics. Illustration."
     image: "/images/hero.png"
     strapline: "Where beauty meets utility"
+imageText: 
+    title: "Hello There!"
+    blurb: "I'm Jamila, an Ottawa-based designer specializing in branding, grapics and illustration. My work seeks to create harmony between strategy and art, allowing for seamless narratives full of purpose to be creafted. It is form and function on even footing."
+    button: 
+        text: "Discover more"
+        link: "/about"
 ---
 
-# {{ title }}
 
-## Posts
-
-{%- for post in collections.posts %}
-- [{{ post.data.title }}]({{ post.url}})
-{%- endfor %}
 
