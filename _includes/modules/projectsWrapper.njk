@@ -1,0 +1,9 @@
+<section>
+    <h3>Portfolio</h3>
+
+       <ul>
+        {%- for project in collections.project -%}
+            <li>{{ project.data.title }}</li>
+        {%- endfor -%}
+    </ul>
+</section> 
