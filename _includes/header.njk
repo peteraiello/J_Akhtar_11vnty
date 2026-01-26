@@ -2,15 +2,20 @@
     <div class="container-outer">
         <div class="container">
             <div class="nav-wrapper">
-                <div class="nav-logo-wrapper">
-                    <img src="images/logo.svg" alt="Main Logo" />
-                </div>
+                {% if header.logo.src %}
+                    <div class="nav-logo-wrapper">
+                        <a href="/">
+                            <img src="{{ header.logo.src }}" alt="{{ header.logo.alt }}" />
+                        </a>
+                    </div>
+                {% endif %} 
                 <nav aria-label="Main navigation">
                     <ul>
-                        <li><a href="/portfolio">Portfolio</a></li>
-                        <li><a href="/experience">Experience</a></li>
-                        <li><a href="/about">About</a></li>
-                        <li><a href="/contact">Contact</a></li>
+                        {%- for link in header.nav -%}
+                             <li>
+                                <a href="{{link.link}}" class="{% if link.isActive %}is-active{% endif %}">{{ link.label }}</a>
+                            </li>
+                        {%- endfor -%}
                     </ul>
                 </nav> 
             </div>
