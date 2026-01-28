@@ -1,0 +1,11 @@
+<section class="featured-projects">
+    <h3>{{ featuredProjects.title }}</h3>
+    {%- for project in featuredProjects.projects -%}
+        {% set cardImage = project.data.img.src %}
+        {% set cardImageAlt = project.data.img.altText %}
+        {% set cardTitle = project.data.title %}
+        {% set cardExcerpt = project.data.excerpt %}      
+        {% set cardLink = project.data.button.link %}
+        {% include "../components/card.njk" %}
+    {%- endfor -%}    
+</section>

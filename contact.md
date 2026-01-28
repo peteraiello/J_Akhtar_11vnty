@@ -15,6 +15,13 @@ hero:
     image: 
         src: "/images/hero/creative_power.png"
         altText: "Illustration of a cat next to a vase"
+featuredProjects: 
+    title: "Check Out My Projects"
+    projects: [
+            {data: {title: "Those Darjeeling Days", img: {src: "/images/projects/darjeeling.png", altText: "Darjeeling days project"}}},
+            {data: {title: "MyEirene", img: {src: "/images/projects/my_eirene.png", altText: "my eirene"}}},
+            {data: {title: "Sandancer EP", img: {src: "/images/projects/sandancer.png", altText: "sandancer"}}}
+        ]
 footer: 
     footerLogo: 
         src: "/images/Footer_logo.svg"
