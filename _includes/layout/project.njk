@@ -18,4 +18,15 @@
     </span>
 </p>
 
+{%- for layout in flexibleLayout -%}
+    {% if layout.name === "image-text" %}
+        {% set imageTextTitle = layout.title %}
+        {% set imageTextBlurb = layout.text %}
+        {% set imageTextImage = layout.image %}
+        {% include "../modules/imageText.njk" %}
+    {% endif %}
+    {% if layout.name === "text-" %}
+
+{%- endfor -%}
+
 {% include "../footer.njk" %}

@@ -25,6 +25,7 @@ imageText:
     button: 
         text: "Discover more"
         link: "/about"
+    leftToRight: true
 quickLinks: 
     title: "Work"
     cards: [{

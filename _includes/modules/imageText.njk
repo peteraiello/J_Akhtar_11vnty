@@ -1,17 +1,14 @@
-<section class="image-text">
-    {% if imageText.title %}
-        <h1>{{ imageText.title }}</h1>
+<section class="image-text{% if imageTextLeftToRight %} left-to-right {% else %} right-to-left{% endif %}">
+    {% if imageTextTitle %}
+        <h1>{{ imageTextTitle }}</h1>
     {% endif %}
-
-    {% if imageText.blurb %}
-        <p>{{ imageText.blurb }}</p>
+    {% if imageTextBlurb %}
+        {{ imageTextBlurb | safe }}
     {% endif %}
-
-    {% if imageText.button.link %}
-        <a href="{{ imageText.button.link }}">{{ imageText.button.text }}</a>
+    {% if imageTextImage.src %}
+        <img src="{{ imageTextImage.src }}" alt="{{ imageTextImage.altText }}" />
     {% endif %}
-
-    {% if imageText.image.src %}
-        <img src="{{ imageText.image.src }}" alt="{{ imageText.image.altText }}" />
+    {% if imageTextButton.link %}
+        <a href="{{ imageTextButton.link }}">{{ imageTextButton.text }}</a>
     {% endif %}
 </section>

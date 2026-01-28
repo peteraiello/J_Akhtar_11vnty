@@ -4,6 +4,12 @@
 
 {% include "../modules/hero.njk" %}
 
+{% set imageTextTitle = imageText.title %}
+{% set imageTextBlurb = imageText.blurb %}
+{% set imageTextImage = imageText.image %}
+{% set imageTextButton = imageText.button %}
+{% set imageTextLeftToRight = imageText.leftToRight %}
+
 {% include "../modules/imageText.njk" %}
 
 {% include "../modules/quickLinks.njk" %}

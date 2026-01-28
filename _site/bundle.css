@@ -108,6 +108,12 @@ footer nav.footer-menu ul li a {
 
 
 
+html, 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 :root {
     --primary-color: #A1CCFF;
     --secondary-color: #196638;
