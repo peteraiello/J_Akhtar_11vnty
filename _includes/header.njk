@@ -20,4 +20,17 @@
             </nav> 
         </div>
     </div>
+    <!-- Movile menu -->
+        <div class="mobile-menu-wrapper">
+              <nav class="mobile-menu-navigation" aria-label="Main navigation">
+                <ul>
+                    {%- for link in header.nav -%}
+                        <li>
+                            <a href="{{link.link}}" class="nav-item{% if link.isActive %} is-active{% endif %}">{{ link.label }}</a>
+                        </li>
+                    {%- endfor -%}
+                </ul>
+            </nav>             
+        </div>
+    <!-- Mobile menu end --> 
 </header>

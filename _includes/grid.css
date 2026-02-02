@@ -27,7 +27,7 @@
     grid-column: span 6;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 40rem) {
     .col-span-1, 
     .col-span-2,
     .col-span-3,
