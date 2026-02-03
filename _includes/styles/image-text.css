@@ -15,12 +15,12 @@ section.image-text .image-text-image-column .image-text-image__wrapper img {
 }
 
 section.image-text .image-text__title {
-    color: #A2F4E6;
+    color: var(--highlight-color);
     margin: 0;
 }
 
 section.image-text .image-text__content {
-    color: #A2F4E6;
+    color: var(--highlight-color);
 }
 
 section.image-text .image-text__content p {

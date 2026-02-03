@@ -1,20 +1,26 @@
 <section class="hero {{ "theme-" + (hero.theme or "home") }} {{ "bg-" + (hero.backgroundColour or "white") }}">    
     <div class="container">
-        {% if hero.backgroundImage %}
-            <div class="hero-background-image" style="background-image: url('{{hero.backgroundImage.src}}')"><span>background container</span></div>
-        {% endif %}
-        <div class="hero-meta-wrapper">
-            {% if hero.title %}
-                <h1 class="hero-title">{{ hero.title }}</h1>
+        <div class="hero-image-title__wrapper">
+            {% if hero.backgroundImage %}
+                <div class="hero-background-image" style="background-image: url('{{hero.backgroundImage.src}}')"><span>background container</span></div>
             {% endif %}
-            {% if hero.strapline %}
-                <div class="hero-strapline">
-                    <p>{{ hero.strapline }}</p>
+            <div class="hero-meta-wrapper">
+                {% if hero.title %}
+                    <h1 class="hero-title">{{ hero.title }}</h1>
+                {% endif %}
+                {% if hero.strapline %}
+                    <div class="hero-strapline">
+                        <p>{{ hero.strapline }}</p>
+                    </div>
+                {% endif %}
+            </div>
+            {% if hero.image.src %}
+                <div class="hero-image">
+
+                    
+                    <img src="{{ hero.image.src }}" alt="{{ hero.image.altText }}"  /> 
                 </div>
-            {% endif %}
-        </div>
-        {% if hero.image.src %}
-            <img src="{{ hero.image.src }}" alt="{{ hero.image.altText }}" />
-        {% endif %}        
+            {% endif %}    
+        </div>    
     </div>
 </section>

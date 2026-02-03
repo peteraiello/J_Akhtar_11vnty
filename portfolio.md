@@ -13,8 +13,10 @@ header:
 hero: 
     title: "My Portfolio"
     image: 
-        src: "/images/hero/yellow-can.png"
+        src: "/images/hero/portfolio-soda-can.png"
         altText: "Illustration of a cat next to a vase"
+    backgroundColour: "primary"
+    theme: "portfolio"
 projectsWrapper: 
     filterButtons: [
         {label: "All", id: "/all"}, 
