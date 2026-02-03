@@ -24,12 +24,14 @@ section.hero.theme-home .hero-background-image {
     }
 }
 
-
 section.hero .hero-background-image span {
     display: none;
 }
 
 section.hero .hero-meta-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: calc(27 / 16 * 1rem);
     padding-top: calc(124 / 16 * 1rem);
     padding-bottom: calc(240 / 16 * 1rem);
 }
@@ -41,11 +43,13 @@ section.hero.theme-home .hero-title {
 }
 
 section.hero.theme-home .hero-strapline {
-    font-size: clamp(1.5rem, 4vw, 2.25rem);
+    font-size: clamp(1.5rem, 2.5vw, 2.25rem);
     color: var(--tertiary-color);
     margin: 0;
 }
 
-
+section.hero.theme-home .hero-strapline p {
+    margin: 0;
+}
 
 

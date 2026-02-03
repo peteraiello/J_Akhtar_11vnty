@@ -18,11 +18,15 @@ hero:
     backgroundColour: "white"
     theme: "home"
 imageText: 
+    backgroundColour: "secondary"
     image: 
-        src: "/images/jamila.jpg"
+        src: "/images/jamila-portrait.jpg"
         altText: "Jamila portrait"
     title: "Hello There!"
-    blurb: "<p>I'm Jamila, an Ottawa-based designer specializing in branding, grapics and illustration. My work seeks to create harmony between strategy and art, allowing for seamless narratives full of purpose to be creafted. It is form and function on even footing.</p>"
+    blurb: "<p>I'm Jamila, an Ottawa-based designer who specializes in branding, graphics and illustration, where I focus on balancing form and function. I work closely with colour to produce striking, identifiable pieces of art.</p>"
+    graphic: 
+        src: "/images/flowerpot.svg"
+        altText: "Flowerpot"
     button: 
         text: "Discover more"
         link: "/about"

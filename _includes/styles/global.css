@@ -8,6 +8,8 @@ body {
     --primary-color: #A1CCFF;
     --secondary-color: #196638;
     --tertiary-color: #FB93D0;
+    --white: #ffffff;
+    --black: #000000;
     --small: 40rem;
     --medium: 48rem;
     --large: 64rem;
@@ -27,12 +29,28 @@ h6 {
     font-style: normal;
 }
 
+.gap-xxs {gap: calc(2 / 16 * 1rem);}
+.gap-xs {gap: calc(4 / 16 * 1rem);}
+.gap-sm {gap: calc(6 / 16 * 1rem);}
+.gap-md {gap: calc(10 / 16 * 1rem);}
+.gap-lg {gap: calc(20 / 16 * 1rem);}
+@media (width >= 48rem) { 
+    .gap-xxs {gap: calc(4 / 16 * 1rem);}
+    .gap-xs {gap: calc(8 / 16 * 1rem);}
+    .gap-sm {gap: calc(12 / 16 * 1rem);}
+    .gap-md {gap: calc(20 / 16 * 1rem);}
+    .gap-lg {gap: calc(40 / 16 * 1rem);}
+}
+
+
+.button,
 ul,
 li,
 p {
     font-family: "marine-up", sans-serif;
     font-weight: 400;
     font-style: normal;
+    line-height: 150%;
 }
 
 .container {
@@ -47,5 +65,27 @@ p {
     max-width: 1440px;
 }
 
+.button-wrapper {
+    display: flex;
+}
 
+a.button {
+    transition: all 200ms ease-in-out;
+    font-size: calc(24 / 16 * 1rem);
+    font-weight: 900;
+    text-decoration: none;
+    display: block;
+}
+
+a.button-tertiary {
+    color: #B5182F;
+    border-radius: calc(50 / 16 * 1rem);
+    padding: calc(10 / 16 * 1rem) calc(54 / 16 * 1rem) ;
+    background-color: var(--tertiary-color);
+}
+
+a.button-tertiary:hover {
+    color: var(--white);
+    background-color: #B5182F;
+}
 

@@ -1,19 +1,40 @@
-<section class="image-text{% if imageTextLeftToRight %} left-to-right {% else %} right-to-left{% endif %}">
-    {% if imageTextTitle %}
-        <h1>{{ imageTextTitle }}</h1>
-    {% endif %}
-    {% if imageTextBlurb %}
-        {{ imageTextBlurb | safe }}
-    {% endif %}
-    {% if imageTextImage.src %}
-        <img src="{{ imageTextImage.src }}" alt="{{ imageTextImage.altText }}" />
-    {% endif %}
-    {% if imageTextButton.link %}
-        <a href="{{ imageTextButton.link }}">{{ imageTextButton.text }}</a>
-    {% endif %}
-    {%- for button in imageTextButtons -%}
-        <a href="{{button.link}}">
-            {{button.text}}
-        </a>
-    {% endfor %}
+<section class="image-text{% if imageTextLeftToRight %} left-to-right {% else %} right-to-left {% endif %}{{ "bg-" + (imageText.backgroundColour or "white") }}">
+    <div class="container">
+        <div class="grid">
+            <div class="image-text-image-column">
+                {% if imageTextImage.src %}
+                    <div class="image-text-image__wrapper">
+                        <img src="{{ imageTextImage.src }}" alt="{{ imageTextImage.altText }}" />
+                    </div>
+                {% endif %}
+            </div>
+            <div class="image-text-text-column gap-lg">
+                {% if imageTextTitle %}
+                    <h3 class="image-text__title">{{ imageTextTitle }}</h3>
+                {% endif %}
+                {% if imageTextBlurb %}
+                    <div class="image-text__content">
+                        {{ imageTextBlurb | safe }}
+                    </div>
+                {% endif %}            
+                {% if imageTextButton.link %}
+                    <span class="button-wrapper">
+                        <a href="{{ imageTextButton.link }}" class="button button-tertiary">{{ imageTextButton.text }} →</a>
+                    </span>
+                {% endif %}
+                {%- for button in imageTextButtons -%}
+                    <a href="{{button.link}}" class="button button-tertiary">
+                        {{button.text}}
+                    </a>
+                {% endfor %}            
+            </div>
+            {% if graphic %}
+                <div class="image-text-graphic">
+                        <div class="image-text-image__wrapper">
+                            <img src="{{graphic.src}}" alt="{{graphic.altText}}" />
+                        </div>
+                </div>
+            {% endif %}
+        </div>
+    </div>
 </section>
