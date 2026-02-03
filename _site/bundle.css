@@ -235,6 +235,7 @@ h3,
 h4, 
 h5, 
 h6 {
+    margin: 0;
     font-family: "rl-aqva", sans-serif;
     font-weight: 900;
     font-style: normal;
@@ -281,6 +282,10 @@ p {
     font-weight: 400;
     font-style: normal;
     line-height: 150%;
+}
+
+section {
+    padding: calc(69 / 16 * 1rem) 0;
 }
 
 .container {
@@ -427,10 +432,6 @@ section.hero.theme-home .hero-strapline p {
 
 
 
-
-section.image-text {
-    padding: calc(69 / 16 * 1rem) 0;
-}
 
 section.image-text.bg-secondary {
     background-color: var(--secondary-color);

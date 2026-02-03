@@ -35,7 +35,7 @@ quickLinks:
     title: ""
     cards: [{
         title: "Portfolio",
-        blurb: "A carefully curated treasure trove of my creations.",
+        blurb: "<p>A carefully curated treasure trove of my creations.</p>",
         image: 
             {
                 src: "/images/portfolio_thumb.jpg",
