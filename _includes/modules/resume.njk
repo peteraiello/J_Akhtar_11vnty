@@ -1,52 +1,84 @@
 <section class="resume">
-    <h1>{{resume.title}}</h1>
-    {%- for experience in resume.experience.experiences -%}
-        <article>
-            <h3>{{experience.role}} | {{experience.company}}</h3>
-            <div class="meta">
-                <p>
-                    <span class="start-year">{{experience.startYear}}</span> - 
-                    <span class="end-year">{{experience.endYear}}</span>, 
-                    <span class="city">{{experience.city}}</span>,
-                    <span class="country">{{experience.country}}</span>
-                </p>
+    <div class="container">
+        <h1>{{resume.title}}</h1>
+        {%- for item in resume.filters -%}
+            <button>{{ item.label}}</button>
+        {% endfor %}
+        <div class="grid">
+            {% if resume.education.title %}
+                <h3>{{resume.education.title}}</h3>
+            {% endif %}
+            {% if resume.experience.experiences %}
+                <div class="articles-wrapper">
+                    {%- for experience in resume.experience.experiences -%}
+                        <article>
+                            <h4>{{experience.role}} | {{experience.company}}</h4>
+                            <div class="meta">
+                                <p>
+                                    <span class="start-year">{{experience.startYear}}</span> - 
+                                    <span class="end-year">{{experience.endYear}}</span>, 
+                                    <span class="city">{{experience.city}}</span>,
+                                    <span class="country">{{experience.country}}</span>
+                                </p>
+                            </div>
+                            <p>{{experience.description}}</p>
+                        </article>
+                    {%- endfor -%}
+                </div>
+            {% endif %}
+        </div>
+        {% if resume.education.title %}
+            <h3>{{resume.education.title}}</h3>
+        {% endif %}
+        {% if resume.education.items %}
+            <div class="articles-wrapper">
+                {%- for item in resume.education.items -%}
+                    <article>
+                        <h4>{{item.title}}</h4>
+                        <div class="meta">
+                            <p>
+                                <span class="start-year">{{item.startYear}}</span> - 
+                                <span class="end-year">{{item.endYear}}</span>
+                                <span class="school">{{item.school}}</span>
+                            </p>
+                        </div>
+                    </article>
+                {%- endfor -%}
             </div>
-            <p>{{experience.description}}</p>
-        </article>
-    {%- endfor -%}
-    <h1>{{resume.education.title}}</h1>
-    {%- for item in resume.education.items -%}
-        <article>
-            <h3>{{item.title}}</h3>
-            <div class="meta">
-                <p>
-                    <span class="start-year">{{item.startYear}}</span> - 
-                    <span class="end-year">{{item.endYear}}</span>
-                    <span class="school">{{item.school}}</span>
-                </p>
+        {% endif %}
+        {% if resume.skills.title %}
+            <h3>{{resume.skills.title}}</h3>
+        {% endif %}
+        {%-  for item in resume.skills.items -%}
+            <div class="articles-wrapper">
+                {% if item.title %}
+                    <h4>{{item.title}}</h4>
+                {% endif %}
+                {%- for item in item.group -%}
+                    <p>{{item}}</p>
+                {%- endfor -%}
             </div>
-        </article>
-    {%- endfor -%}
-    <h1>{{resume.skills.title}}</h1>
-    {%-  for item in resume.skills.items -%}
-        <h3>{{item.title}}</h3>
-        {%- for item in item.group -%}
-            <p>{{item}}</p>
         {%- endfor -%}
-    {%- endfor -%}
-    <h1>{{resume.volunteering.title}}</h1>
-    {%- for item in resume.volunteering.items -%}
-        <article>
-            {{ item.organisation }}
-            {{ item.description }} 
-            <div class="meta">
-                <p>
-                    <span class="start-year">{{item.startYear}}</span> - 
-                    <span class="end-year">{{item.endYear}}</span>
-                    <span class="school">{{item.school}}</span>
-                </p>
+        {% resume.volunteering.title %}
+            <h3>{{resume.volunteering.title}}</h3>
+        {% endif %}
+        {% if resume.volunteering.items %}
+            <div class="articles-wrapper">
+                {%- for item in resume.volunteering.items -%}
+                    <article>
+                        {{ item.organisation }}
+                        {{ item.description }} 
+                        <div class="meta">
+                            <p>
+                                <span class="start-year">{{item.startYear}}</span> - 
+                                <span class="end-year">{{item.endYear}}</span>
+                                <span class="school">{{item.school}}</span>
+                            </p>
+                        </div>
+                        {{item.address }}
+                    </article>
+            {%- endfor -%}
             </div>
-            {{item.address }}
-        </article>
-    {%- endfor -%}
+        {% endif %}
+    </div>
 </section>
