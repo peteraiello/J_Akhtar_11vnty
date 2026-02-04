@@ -15,7 +15,7 @@ hero:
     image: 
         src: "/images/hero/portfolio-soda-can.png"
         altText: "Illustration of a cat next to a vase"
-    backgroundColour: "primary"
+    backgroundColour: "secondary"
     theme: "portfolio"
 projectsWrapper: 
     title: ""
@@ -25,6 +25,12 @@ projectsWrapper:
         {label: "Graphics", id: "/graphics"},
         {label: "Illustration", id: "/illustration"},
 ]
+form: 
+    backgroundColour: "secondary"
+    title: "Keen to work with me? <span>Then please get in touch!</span>"
+    graphic: 
+        src: "/images/form/cherry-punnet.png"
+        altText: "Cherry Punnet"
 footer: 
     footerLogo: 
         src: "/images/Footer_logo.svg"
