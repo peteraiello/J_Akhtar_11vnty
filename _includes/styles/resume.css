@@ -73,13 +73,67 @@ section.resume .resume-skills__group ul.resume-skills__list {
     }
 }
 
+section.resume .articles-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: calc(30 / 16 * 1rem);
+    @media (width >= 48rem) { 
+        gap: calc(58 / 16 * 1rem);
+    }
+}
+
+section.resume article {
+    color: var(--dark);
+}
+
+section.resume .articles-wrapper article {
+    display: flex;
+    gap: calc(11 / 16 * 1rem);
+    flex-direction: column;
+}
+
+section.resume .articles-wrapper article p {
+    margin: 0;
+}
+
 section.resume .articles-wrapper__row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-section.resume .button-wrapper {
-    justify-content: center;
+section.resume .resume-meta__wrapper {
+    display: flex; 
+    flex-direction: column;
+    gap: calc(15 / 16 * 1rem);
+    @media (width >= 48rem) { 
+        gap: calc(28 / 16 * 1rem)
+    }
 }
 
+section.resume article.resume-education .resume-meta__wrapper {
+    gap: 0;
+}
+
+section.resume .button-wrapper {
+    justify-content: center;
+    margin-top: calc(40 / 16 * 1rem);
+    @media (width >= 48rem) { 
+        margin-top: calc(90 / 16 * 1rem);
+    }
+    @media (width >= 64rem) { 
+        margin-top: calc(140 / 16 * 1rem);
+    }
+}
+
+section.resume .resume-wrapper {
+    display: flex;
+    gap: calc(40 / 16 * 1rem);
+    flex-direction: column;
+    @media (width >= 48rem) { 
+        gap: calc(90 / 16 * 1rem);
+    }
+    @media (width >= 64rem) { 
+        gap: calc(140 / 16 * 1rem);
+    }
+}

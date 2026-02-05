@@ -89,6 +89,7 @@ section.hero.theme-portfolio .hero-meta-wrapper {
     order: 2;
 }   
 
+section.hero.theme-about .hero-image-title__wrapper .hero-image,
 section.hero.theme-experience .hero-image-title__wrapper .hero-image,
 section.hero.theme-portfolio .hero-image-title__wrapper .hero-image {
     display: none;
@@ -124,4 +125,11 @@ section.hero.theme-experience .hero-image-title__wrapper .hero-meta-wrapper .her
     align-self: flex-end;
 }
 
-
+section.hero.theme-about .hero-image-title__wrapper {   
+    display: flex;
+    flex-direction: row;
+    @media (width >= 48rem) { 
+        justify-content: center;
+        gap: calc(120 / 16 * 1rem);
+    }
+}

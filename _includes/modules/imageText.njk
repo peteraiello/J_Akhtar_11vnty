@@ -1,4 +1,4 @@
-<section class="image-text{% if imageTextLeftToRight %} left-to-right {% else %} right-to-left {% endif %}{{ "bg-" + (imageText.backgroundColour or "white") }}">
+<section class="image-text{% if imageTextLeftToRight === true %} left-to-right {% else %} right-to-left {% endif %}{{ "bg-" + (imageText.backgroundColour or "white") }}{% if imageText.graphic %} has-graphic{% endif%}">
     <div class="container">
         <div class="grid">
             <div class="image-text-image-column">
@@ -18,21 +18,27 @@
                     </div>
                 {% endif %}            
                 {% if imageTextButton.link %}
-                    <span class="button-wrapper">
-                        <a href="{{ imageTextButton.link }}" class="button button-tertiary">{{ imageTextButton.text }} →</a>
-                    </span>
+                    <div class="button-wrapper">
+                        <a href="{{ imageTextButton.link }}" class="{{ "button button-tertiary button-" + (button.backgroundColour or "secondary") }}">{{ imageTextButton.text }} →</a>
+                    </div>
                 {% endif %}
-                {%- for button in imageTextButtons -%}
-                    <a href="{{button.link}}" class="button button-tertiary">
-                        {{button.text}}
-                    </a>
-                {% endfor %}            
+                {% if imageTextButtons %}
+                    <div class="buttons-wrapper">
+                        {%- for button in imageTextButtons -%}
+                            <div class="button-wrapper">            
+                                <a href="{{button.link}}" class="{{ "button button-" + (button.backgroundColour or "secondary") }}{% if button.border %} w-border{% endif %}">
+                                    {{button.text}}
+                                </a>
+                            </div>
+                        {% endfor %}            
+                    </div>
+                {% endif %}
             </div>
-            {% if graphic %}
+            {% if graphic.src %}
                 <div class="image-text-graphic">
-                        <div class="image-text-image__wrapper">
-                            <img src="{{graphic.src}}" alt="{{graphic.altText}}" />
-                        </div>
+                    <div class="image-text-image__wrapper">
+                        <img src="{{graphic.src}}" alt="{{graphic.altText}}" />
+                    </div>
                 </div>
             {% endif %}
         </div>

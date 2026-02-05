@@ -4,6 +4,10 @@ body {
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth !important;
+}
+
 :root {
     --primary-color: #A1CCFF;
     --secondary-color: #196638;
@@ -122,6 +126,10 @@ h6 {
     height: 0;
     opacity: 0;
     overflow: hidden;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
 }
 
 .button,
