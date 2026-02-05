@@ -245,6 +245,7 @@ a.button-primary:hover {
     background-color: var(--secondary-color);
 }
 
+a.filter-button,
 button.filter-button {
     cursor: pointer;
     white-space: nowrap;

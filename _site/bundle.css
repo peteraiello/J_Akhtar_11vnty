@@ -490,6 +490,7 @@ a.button-primary:hover {
     background-color: var(--secondary-color);
 }
 
+a.filter-button,
 button.filter-button {
     cursor: pointer;
     white-space: nowrap;
@@ -878,15 +879,38 @@ section.resume .resume-subsubtitle {
 }
 
 section.resume .resume-skills__title {
+    margin-bottom: 0;
     font-family: "marine-up", sans-serif;
     font-style: italic;
     font-size: clamp(1.25rem, 4vw, 1.75rem);
     text-transform: uppercase;
 }
 
+section.resume .resume-skills__group {
+    display: flex;
+    flex-direction: column;
+    gap: calc(25 / 16 * 1rem);
+    @media (width >= 48rem) { 
+        gap: calc(50 / 16 * 1rem);
+    }
+}
+
+section.resume .resume-skills__group ul.resume-skills__list {
+    margin: 0;
+    display: flex;
+    gap: calc(25 / 16 * 1rem);
+    flex-direction: column;
+    padding-left: 0;
+    list-style: none;
+    @media (width >= 48rem) { 
+        gap: calc(50 / 16 * 1rem);
+    }
+}
+
 section.resume .articles-wrapper__row {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 section.resume .button-wrapper {

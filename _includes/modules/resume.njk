@@ -7,13 +7,13 @@
             {% if resume.filters %}
                 <div class="resume-filters__wrapper">
                     {%- for item in resume.filters -%}
-                        <button class="filter-button">{{ item.label}}</button>
+                        <a class="filter-button" href="{{'#' + item.link}}">{{ item.label}}</button>
                     {% endfor %}
                 </div>
             {% endif %}
         </div>
         <!-- Grid start -->
-        <div class="grid">
+        <div class="grid" id="experience">
             <!-- Experience start --> 
             <div class="col-span-3">
                 {% if resume.experience.title %}
@@ -39,6 +39,8 @@
                 </div>
             {% endif %}
             <!-- / Experience end -->
+        </div>
+        <div class="grid" id="education">
             <!-- Education start -->
             <div class="col-span-3">
                 {% if resume.education.title %}
@@ -54,14 +56,19 @@
                                 <p>
                                     <span class="resume-education__start-year">{{item.startYear}}</span> - 
                                     <span class="resume-education__end-year">{{item.endYear}}</span>
-                                    <span class="resume-education__school">{{item.school}}</span>
                                 </p>
                             </div>
+                            {% if item.school %}
+                                <p class="resume-education__school">{{item.school}}</p>
+                            {% endif %}
+
                         </article>
                     {%- endfor -%}
                 </div>
             {% endif %}
             <!-- / Education end -->
+        </div>
+        <div class="grid" id="skills">
             <!-- Skills start -->
             <div class="col-span-3">
                 {% if resume.skills.title %}
@@ -69,7 +76,7 @@
                 {% endif %}
             </div>
             {% if resume.skills.items %}
-                <div class="articles-wrapper col-span-9">
+                <div class="articles-wrapper col-span-7">
                     <div class="articles-wrapper__row">
                         {%-  for item in resume.skills.items -%}
                             <div class="resume-skills__group">
@@ -89,6 +96,8 @@
                 </div>
             {% endif %}
             <!-- / Skills end -->
+        </div>
+        <div class="grid" id="volunteering">
             <!-- Volunteering start -->
             <div class="col-span-3">
                 {% if resume.volunteering.title %}

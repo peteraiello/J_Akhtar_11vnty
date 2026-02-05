@@ -21,10 +21,10 @@ hero:
 resume: 
     title: "Resume"
     filters: [
-        {label: "Experience", id: "experience"},
-        {label: "Education", id: "education"}, 
-        {label: "Skills", id: "skills"},
-        {label: "Volunteering", id: "volunteering"}
+        {label: "Experience", link: "experience"},
+        {label: "Education", link: "education"}, 
+        {label: "Skills", link: "skills"},
+        {label: "Volunteering", link: "volunteering"}
     ]
     experience: 
         title: "Experience"
