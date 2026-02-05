@@ -307,6 +307,13 @@ h6 {
     font-size: clamp(1rem, 4vw, 1.25rem);
 }
 
+.font-bold {
+    font-weight: 600;
+}
+
+.font-black {
+    font-weight: 900;
+}
 
 
 .text-primary {
@@ -861,13 +868,33 @@ section.resume h5.resume-education__title span {
 }
 
 section.resume .resume-subtitle {
-    text-transform: uppercase;
     font-family: "marine-up", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+section.resume .resume-subsubtitle {
+   font-family: "marine-up", sans-serif;
+   font-weight: bold;
+}
+
+section.resume .resume-skills__title {
+    font-family: "marine-up", sans-serif;
+    font-style: italic;
+    font-size: clamp(1.25rem, 4vw, 1.75rem);
+    text-transform: uppercase;
+}
+
+section.resume .articles-wrapper__row {
+    display: flex;
+    flex-direction: row;
 }
 
 section.resume .button-wrapper {
     justify-content: center;
-} 
+}
+
+ 
 
 .contact-form .column-text {
     display: flex;

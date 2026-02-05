@@ -23,8 +23,8 @@
             {% if resume.experience.experiences %}
                 <div class="articles-wrapper col-span-9">
                     {%- for experience in resume.experience.experiences -%}
-                        <article class="resume__experience">
-                            <h5 class="resume-education__title text-body heading-sm">{{experience.role}} | <span class="resume-education__company">{{experience.company}}</span></h5>
+                        <article class="resume__experience font-dark">
+                            <h5 class="resume-subsubtitle resume-education__title heading-sm">{{experience.role}} | <span class="resume-education__company">{{experience.company}}</span></h5>
                             <div class="meta body-lead">
                                 <p>
                                     <span class="resume-experience__start-year">{{experience.startYear}}</span> - 
@@ -49,7 +49,7 @@
                 <div class="articles-wrapper col-span-9">
                     {%- for item in resume.education.items -%}
                         <article class="resume-education">
-                            <h4 class="resume-education__title">{{item.title}}</h4>
+                            <h5 class="resume-subsubtitle resume-education__title heading-sm">{{item.title}}</h5>
                             <div class="meta">
                                 <p>
                                     <span class="resume-education__start-year">{{item.startYear}}</span> - 
@@ -74,7 +74,7 @@
                         {%-  for item in resume.skills.items -%}
                             <div class="resume-skills__group">
                                 {% if item.title %}
-                                    <h4 class="resume-skills__title">{{item.title}}</h4>
+                                    <h5 class="resume-skills__title">{{item.title}}</h5>
                                 {% endif %}
                                 {% if item.group %}
                                     <ul class="resume-skills__list">
@@ -100,7 +100,7 @@
                     {%- for item in resume.volunteering.items -%}
                         <article class="resume-volunteering">
                             {% if item.organisation %}
-                                <h4 class="resume-volunteering__title">{{ item.organisation }} | {{ item.description }}</h4>
+                                <h5 class="resume-volunteering__title resume-subsubtitle heading-sm">{{ item.organisation }} | {{ item.description }}</h5>
                             {% endif %}
                             <div class="meta">
                                 <p>

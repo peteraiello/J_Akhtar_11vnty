@@ -62,7 +62,13 @@ h6 {
     font-size: clamp(1rem, 4vw, 1.25rem);
 }
 
+.font-bold {
+    font-weight: 600;
+}
 
+.font-black {
+    font-weight: 900;
+}
 
 .text-primary {
     color: var(--primary-color);
