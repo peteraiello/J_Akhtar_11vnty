@@ -725,6 +725,32 @@ section.hero.theme-about .hero-image-title__wrapper {
     }
 }
 
+section.hero .hero-icon {
+    display: none;
+    @media (width >= 48rem) { 
+        display: block;
+        background-image: none;
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 300px;
+        min-height: 300px;    
+    }
+}
+
+section.hero .hero-icon-portfolio {
+    background-image: url("/images/hero/soda-can.svg");
+}
+
+section.hero .hero-icon-experience {
+    background-image: url("/images/hero/watering-can.svg");
+}
+
+section.hero .hero-icon-about {
+    background-image: url("/images/hero/flower-pot.svg");
+}
+
+
 
 section.image-text.bg-secondary {
     background-color: var(--secondary-color);

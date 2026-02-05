@@ -2,7 +2,7 @@
     <div class="container">
         <div class="hero-image-title__wrapper">
             {% if hero.backgroundImage %}
-                <div class="hero-background-image" style="background-image: url('{{hero.backgroundImage.src}}')"><span>background container</span></div>
+                <div class="hero-background-image" style="background-image: url('{{hero.backgroundImage.src}}')"><span class="visually-hidden">background container</span></div>
             {% endif %}
             <div class="hero-meta-wrapper">
                 {% if hero.title %}
@@ -14,11 +14,9 @@
                     </div>
                 {% endif %}
             </div>
-            {% if hero.image.src %}
-                <div class="hero-image">                
-                    <img src="{{ hero.image.src }}" alt="{{ hero.image.altText }}"  /> 
-                </div>
-            {% endif %}    
+            {% if hero.theme %}
+                <div class="hero-icon {{ "hero-icon-" + (hero.theme or "portfolio") }}"></div>
+            {% endif %}
         </div>    
     </div>
 </section>

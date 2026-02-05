@@ -13,7 +13,7 @@ header:
 hero: 
     title: "Design Studio"
     backgroundImage: 
-        src: "/images/hero/creative-juice.png"
+        src: "/images/hero/creative-juice.svg"
     strapline: "Branding | Graphics | Illustration"
     backgroundColour: "white"
     theme: "home"

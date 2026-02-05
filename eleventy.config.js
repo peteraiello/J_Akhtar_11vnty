@@ -12,9 +12,11 @@ export default function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("images/favicon");
     eleventyConfig.addPassthroughCopy("scripts");
     eleventyConfig.addPassthroughCopy("images/*.svg");
-    eleventyConfig.addPassthroughCopy("images/hero/creative-juice.png");
+    eleventyConfig.addPassthroughCopy("images/hero/creative-juice.svg");
+    eleventyConfig.addPassthroughCopy("images/hero/soda-can.svg");
+    eleventyConfig.addPassthroughCopy("images/hero/watering-can.svg");
+    eleventyConfig.addPassthroughCopy("images/hero/flower-pot.svg");
     eleventyConfig.addPlugin(eleventyImageTransformPlugin);
-    
     // Create a projects collection from the projects folder
     eleventyConfig.addCollection("projects", function(collectionApi) {
         return collectionApi.getFilteredByGlob("projects/**/*.md");
