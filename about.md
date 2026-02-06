@@ -1,5 +1,7 @@
 --- 
 layout: "/layout/about.njk"
+title: "About"
+description: "I'm a designer with an obsession for colour with a background in interior design."
 header: 
     logo: 
         src: "/images/logo.svg"

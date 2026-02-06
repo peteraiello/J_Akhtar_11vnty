@@ -1,5 +1,7 @@
 --- 
 layout: "/layout/home.njk"
+title: "Home"
+description: "Welcome to my portfolio! I'm an Ottawa based designer specializing in branding and graphics, with a background in interior design"
 header: 
     logo: 
         src: "/images/logo.svg"

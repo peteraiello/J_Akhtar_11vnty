@@ -1,5 +1,7 @@
 --- 
 layout: "/layout/experience.njk"
+title: "Experience"
+description: "Learn more about my previous experience including volunteering."
 header: 
     logo: 
         src: "/images/logo.svg"

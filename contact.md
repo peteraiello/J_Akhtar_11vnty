@@ -1,5 +1,7 @@
 --- 
 layout: "/layout/contact.njk"
+title: "Contact"
+description: "I'm always open to a coffee chat! Get in touch to learn more about my work."
 header: 
     logo: 
         src: "/images/logo.svg"
