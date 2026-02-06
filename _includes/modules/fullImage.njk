@@ -1,6 +1,10 @@
-<section>
+<section class="full-width-image">
     <div class="container">
-        <img src="{{fullImage.src}}" alt="{{fullImage.alt}}" />
+        {% if fullImage.src %}
+            <div class="image-wrapper">
+                <img src="{{fullImage.src}}" alt="{{fullImage.alt}}" />
+            </div>
+        {% endif %}
     </div>
 </section>
 

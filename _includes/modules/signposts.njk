@@ -1,14 +1,14 @@
-<section class="signposts">
-    <div class="container">
+{% if signposts %}
+    <div class="grid">
         {%- for signpost in signposts -%}
-            <article class="signpost">
+            <article class="signpost {% if columns === 3 %}col-span-4{% elif columns === 4 %}col-span-3{% elif columns === 6 %} col-span-2 {% endif %}">
                 {% if(signpost.img.src) %}
                     <img src="{{ signpost.img.src}}" alt="{{signpost.img.alt}}" />
                 {% endif %}
                 {% if(signpost.title) %}
-                    <p>{{signpost.title}}</p>
+                    <p class="caption body-lead">{{signpost.title}}</p>
                 {% endif %}
             </article>
         {%- endfor -%}
     </div>
-</section>
+{% endif %}

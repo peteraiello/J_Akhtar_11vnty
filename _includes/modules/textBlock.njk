@@ -1,15 +1,19 @@
 <section class="text-block">
-    <div class="gallery">
-        {%- for image in gallery.images -%}
-            <img src="{{image.src}}" alt="{{image.alt}}" />
-        {%- endfor -%}
-    </div>
-
-    {% if title %}
-        <h3>{{title}}</h3>
-    {% endif %}
-    
-    <div>
-        {{content | safe}}
+    <div class="container">
+        {% if signposts %}
+            {% include "../modules/signposts.njk" %}
+        {% endif %}
+        <div class="grid">
+            <div class="text-block__wrapper">
+                {% if title %}
+                    <h3 class="text-block__title">{{title}}</h3>
+                {% endif %}
+                {% if content %}
+                    <div class="text-block__content body-lead">
+                        {{content | safe}}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
     </div>
 </section>

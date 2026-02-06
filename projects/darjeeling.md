@@ -87,17 +87,16 @@ flexibleLayout: [
             <p>Suspendisse potenti. Aliquam rhoncus purus eget ipsum venenatis, eget venenatis nulla aliquam. Vivamus finibus, metus non pellentesque ornare, turpis urna eleifend mi, a suscipit sem massa et ligula. Suspendisse sit amet libero at urna blandit molestie at sit amet risus.</p>"
     },
     {
-        name: "signposts",
-        columns: 3,
-        signposts: [
-            {title: "Wolf: connection + adventure", img: {src: "/images/projects/darjeeling/wolf-illustration.png", altText: "wolf illustration"}},
-            {title: "Bear: Wisdom + Cosiness", img: {src: "/images/projects/darjeeling/bear-illustration.png", altText: "bear illustration"}},
-            {title: "Otter: Creativity + Play", img: {src: "/images/projects/darjeeling/otter-illustration.png", altText: "otter illustration"}}
-        ] 
-    },
-    {
         name: "text-block", 
         title: "Iconography",
+        signposts: {
+            columns: 3,
+            items: [
+                {title: "Wolf: connection + adventure", img: {src: "/images/projects/darjeeling/wolf-illustration.png", altText: "wolf illustration"}},
+                {title: "Bear: Wisdom + Cosiness", img: {src: "/images/projects/darjeeling/bear-illustration.png", altText: "bear illustration"}},
+                {title: "Otter: Creativity + Play", img: {src: "/images/projects/darjeeling/otter-illustration.png", altText: "otter illustration"}}
+            ]
+        },
         content: 
             "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis mi et sapien luctus pharetra. Sed et diam in sem tempus viverra non vel enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam quis vulputate diam.</p>
             
@@ -106,22 +105,33 @@ flexibleLayout: [
     {
         name: "text-block", 
         title: "Illustrations",
+        signposts: {
+            columns: 6,
+            items: [
+                {img: {src: "/images/projects/darjeeling/sunflower-blue.png", altText: "sunflower illustration"}},
+                {img: {src: "/images/projects/darjeeling/star-blue.png", altText: "star illustration"}},
+                {img: {src: "/images/projects/darjeeling/ivy-blue.png", altText: "ivy illustration"}},
+                {img: {src: "/images/projects/darjeeling/flower-blue.png", altText: "flower illustration"}},
+                {img: {src: "/images/projects/darjeeling/fern-blue.png", altText: "fern illustration"}},
+                {img: {src: "/images/projects/darjeeling/blue-bolt.png", altText: "bolt illustration"}}
+            ]
+        },
         content: 
             "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis mi et sapien luctus pharetra. Sed et diam in sem tempus viverra non vel enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam quis vulputate diam.</p>
             
             <p>Suspendisse potenti. Aliquam rhoncus purus eget ipsum venenatis, eget venenatis nulla aliquam. Vivamus finibus, metus non pellentesque ornare, turpis urna eleifend mi, a suscipit sem massa et ligula. Suspendisse sit amet libero at urna blandit molestie at sit amet risus.</p>"
     },
     {
-        gallery: {
-            columns: 3,
-            images: [
-                {src: "/images/projects/darjeeling/pattern-1.png", alt: "pattern one"},
-                {src: "/images/projects/darjeeling/pattern-2.png", alt: "pattern two"},
-                {src: "/images/projects/darjeeling/pattern-3.png", alt: "pattern three"},
-            ]
-        },
         name: "text-block",
         title: "Patterns",
+        signposts: {
+            columns: 3,
+            items: [
+                {img: {src: "/images/projects/darjeeling/pattern-1.png", alt: "pattern one"}},
+                {img: {src: "/images/projects/darjeeling/pattern-2.png", alt: "pattern two"}},
+                {img: {src: "/images/projects/darjeeling/pattern-3.png", alt: "pattern three"}},
+            ]
+        },
         content: 
             "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis mi et sapien luctus pharetra. Sed et diam in sem tempus viverra non vel enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam quis vulputate diam.</p>            
             <p>Suspendisse potenti. Aliquam rhoncus purus eget ipsum venenatis, eget venenatis nulla aliquam. Vivamus finibus, metus non pellentesque ornare, turpis urna eleifend mi, a suscipit sem massa et ligula. Suspendisse sit amet libero at urna blandit molestie at sit amet risus.</p>"
