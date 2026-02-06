@@ -1,25 +1,47 @@
 <div class="article-header">
+    <div class="container">
+        {% if title %}
+            <h1 class="article-header__title heading-xl">{{ title }}</h1>
+        {% endif %}
+        
+        {% if specializations %}
+            <ul class="article-header__tags">
+                {%- for tag in specializations %}
+                    <li class="article-header__tag">{{tag }}</li>
+                {%- endfor -%}
+            </ul>
+        {% endif %}
 
-    <h1>{{ title }}</h1>
-    
-    <p>{{location}}</p>    
-    <p>
-        <span>
-            Date: {{ startDate }}
-        </span>
-        <br />
-        <span>
-            End date: {{ endDate }}
-        </span>
-    </p>
-    
-    {% if headerImage.src %}
-        <img src="{{headerImage.src}}" alt="{{headerImage.altText}}" />
-    {% endif %}
+        <p class="article-header__meta">
+            {% if startDate %}
+                <span class="article-header-start__date">
+                    Date: {{ startDate | date("MMM YYYY")}}
+                </span>
+            {% endif %}
+            <br />
+            {% if endDate %}
+                <span class="article-header-end__date">
+                    End date: {{ endDate | date("MMM YYYY")}}
+                </span>
+            {% endif %}
+        </p>
 
-    {% if brandSwatches %}
-        {%- for swatch in brandSwatches -%}
-            <span style="background-color: {{swatch}}">{{ swatch }}</span>
-        {%- endfor -%}
-    {% endif %}
+        {% if location %}
+            <p class="article-header__location">{{location}}</p>    
+        {% endif %}
+
+        {% if headerImage.src %}
+            <div class="article-header-image__wrapper">
+                <img src="{{headerImage.src}}" alt="{{headerImage.altText}}" />
+            </div>
+        {% endif %}
+
+        {% if brandSwatches %}
+            <ul class="article-header__swatches">
+                {%- for swatch in brandSwatches -%}
+                    <li class="article-header__swatch" style="background-color: {{swatch}}">{{ swatch }}</li>
+                {%- endfor -%}
+            </ul>
+        {% endif %}
+    </div>
 </div>

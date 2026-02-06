@@ -3,9 +3,10 @@ layout: "/layout/project.njk"
 permalink: "/portfolio/darjeeling/"
 title: "Those Darjeeling Days"
 tags: project
+specializations: ["Branding", "Graphics"]
 excerpt: "A branding and graphic project for a brand new creative blog that has recently been set up."
 startDate: 2025-01-15
-endDate: 2025-03-15
+endDate: 2025-12-15
 thumbnail: 
     src: "/images/projects/darjeeling.png"
     altText: "Darjeeling days"
