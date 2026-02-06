@@ -732,9 +732,17 @@ section.hero.theme-contact .hero-image-title__wrapper {
     }
 }
 
+
+section.hero.theme-contact .hero-image-title__wrapper .hero-title br {
+    display: none;
+    @media (width >= 48rem) {
+        display: block;
+    }
+}
+
+
 section.hero.theme-contact .hero-image-title__wrapper .hero-title {
     width: 100%;
-    max-width: calc(200 / 16 * 1rem);
     text-align: left;
     @media (width >= 48rem) {
         text-align: right;

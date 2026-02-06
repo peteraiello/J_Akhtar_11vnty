@@ -11,7 +11,7 @@ header:
         {label: "Contact", link: "/contact", isActive: true}
     ]
 hero: 
-    title: "Contact Me"
+    title: "Contact </br>Me"
     image: 
         src: "/images/hero/creative_power.png"
         altText: "Illustration of a cat next to a vase"

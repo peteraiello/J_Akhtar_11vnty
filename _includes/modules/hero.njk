@@ -6,7 +6,7 @@
             {% endif %}
             <div class="hero-meta-wrapper">
                 {% if hero.title %}
-                    <h1 class="hero-title">{{ hero.title }}</h1>
+                    <h1 class="hero-title">{{ hero.title | safe }}</h1>
                 {% endif %}
                 {% if hero.strapline %}
                     <div class="hero-strapline">
