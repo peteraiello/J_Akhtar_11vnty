@@ -1,6 +1,5 @@
 import markdownIt from "markdown-it"
 import moment from "moment";
-// const moment = require('moment');
 
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 
@@ -16,11 +15,7 @@ export default function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("scripts");
     
     eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-        formats: ["webp", "jpeg", "svg"],
-        svgShortCircuit: false,
-        skipped: ["svg"],
-        // This tells the plugin to skip processing SVG files
-        extensions: "html"
+        formats: ["auto"]
     });
 
     // Create a projects collection from the projects folder
