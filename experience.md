@@ -15,7 +15,7 @@ header:
 hero: 
     title: "My Experience"
     image: 
-        src: "/images/hero/watering-can.png"
+        src: "/images/hero/watering-can.svg"
         altText: "Illustration of a cat next to a vase"
     strapline: ""
     theme: "experience"
@@ -143,7 +143,7 @@ footer:
     footerLogo: 
         src: "/images/Footer_logo.svg"
         altText: "Footer Logo"
-    copyright: "Jamila Y Akhtar 2026 All Rights Reserved"
+    copyright: ""
     footerLinks: [
         {label: "FAQs", link: "/faqs"},
         {label: "Privacy Policy", link: "/privacy-policy"},

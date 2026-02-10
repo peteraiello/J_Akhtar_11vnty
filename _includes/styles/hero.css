@@ -155,35 +155,15 @@ section.hero.theme-contact .hero-image-title__wrapper .hero-meta-wrapper {
     order: 2;
 }
 
-section.hero .hero-icon {
+
+
+section.hero .hero-image-wrapper {
     display: none;
     @media (width >= 48rem) { 
-        display: block;
-        background-image: none;
-        background-position: right;
-        background-repeat: no-repeat;
-        background-size: contain;
+        display: flex;
+        justify-content: end;
         width: 300px;
         min-height: 300px;    
     }
-}
-
-section.hero .hero-icon-home {
-    display: none;
-}
-section.hero .hero-icon-portfolio {
-    background-image: url("/images/hero/soda-can.svg");
-}
-
-section.hero .hero-icon-experience {
-    background-image: url("/images/hero/watering-can.svg");
-}
-
-section.hero .hero-icon-about {
-    background-image: url("/images/hero/flower-pot.svg");
-}
-
-section.hero .hero-icon-contact {
-    background-image: url("/images/hero/battery.svg");
 }
 

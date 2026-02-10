@@ -7,9 +7,11 @@
                         {% if item.title %}
                             <h4 class="logo-grid__title heading-sm">{{ item.title }}</h4>
                         {% endif %}
-                        {% if item.logo %}
+                        {% if item.image %}
                             <div class="logo-wrapper">
-                                <div class="logo {{ "orientation-" + (item.logo.orientation or "square") }} logo-{{item.logo.name}}"><span class="visually-hidden">logo {{ item.logo.name }}</span></div>
+                                <img src="{{ item.image.src }}" alt="{{ item.image.altText }}" />
+
+                                {# <div class="logo {{ "orientation-" + (item.image.orientation or "square") }} logo-{{item.logo.name}}"><span class="visually-hidden">logo {{ item.logo.name }}</span></div> #}
                             </div>
                         {% endif %}
                     </div>

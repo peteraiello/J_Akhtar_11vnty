@@ -34,28 +34,12 @@ header:
         {label: "About", link: "/about"},
         {label: "Contact", link: "/contact"}
     ]
-footer: 
-    footerLogo: 
-        src: "/images/Footer_logo.svg"
-        altText: "Footer Logo"
-    copyright: "Jamila Y Akhtar 2026 All Rights Reserved"
-    footerLinks: [
-        {label: "FAQs", link: "/faqs"},
-        {label: "Privacy Policy", link: "/privacy-policy"},
-        {label: "Terms", link: "/terms-and-conditions"}
-    ]
-    footerSocial: [
-        {label: "twitter", link: "#"},
-        {label: "instagram", link: "#"},
-        {label: "youtube", link: "#"},
-        {label: "linkedin", link: "#"}
-    ]
 flexibleLayout: [
     {
         name: "image-text",
         title: "Brief",
         image: {
-            src: "/images/projects/darjeeling/bear-illustration.jpg",
+            src: "/images/projects/darjeeling/dd-bear.svg",
             altText: "Illustration of bear",
             orientation: "landscape"
         },
@@ -68,7 +52,7 @@ flexibleLayout: [
     {
         name: "full-width-image",
         fullImage: {
-            src: "/images/projects/darjeeling/darjeeling-brand.png",
+            src: "/images/projects/darjeeling/darjeeling-brand.svg",
             altText: "Darjeeling brand" 
         }
     },
@@ -94,8 +78,9 @@ flexibleLayout: [
                     title: "Primary",                
                     span: "full",
                     theme: "first-full",
-                    logo: {
-                        name: "dd-primary",
+                    image: {
+                        src: "/images/projects/darjeeling/dd-logo-primary.svg",
+                        altText: "Darjeeling logo",
                         orientation: "landscape"
                     },
                 },
@@ -103,36 +88,40 @@ flexibleLayout: [
                     title: "Secondary",
                     span: "2/3",
                     theme: "mid-left",
-                    logo: {
-                        name: "dd-secondary",
-                        orientation: "square"
+                    image: {
+                        src: "/images/projects/darjeeling/dd-logo-secondary.svg",
+                        altText: "Darjeeling logo secondary",
+                        orientation: "landscape"
                     },
                 },
                 {
                     title: "Logomark",
                     span: "1/3",
                     theme: "mid-right",
-                    logo: {
-                        name: "dd-logomark",
-                        orientation: "square"
+                    image: {
+                        src: "/images/projects/darjeeling/dd-logo-logomark.svg",
+                        altText: "Darjeeling logo logomark",
+                        orientation: "landscape"
                     },
                 },
                 {
                     title: "Submark - Primary",
                     span: "2/3",
                     theme: "bottom-left",
-                    logo: {
-                        name: "dd-submark-primary",
-                        orientation: "square"
+                    image: {
+                        src: "/images/projects/darjeeling/dd-logo-submark-primary.svg",
+                        altText: "Darjeeling submark primary",
+                        orientation: "landscape"
                     },
                 },
                 {
                     title: "Submark - Secondary",
                     span: "1/3",
                     theme: "bottom-right",
-                    logo: {
-                        name: "dd-submark-secondary",
-                        oritentation: "square"
+                    image: {
+                        src: "/images/projects/darjeeling/dd-logo-submark-secondary.svg",
+                        altText: "Darjeeling logo",
+                        orientation: "landscape"
                     },
                 }
             ] 
@@ -165,9 +154,9 @@ flexibleLayout: [
         signposts: {
             columns: 3,
             items: [
-                {title: "Wolf: connection + adventure", img: {src: "/images/projects/darjeeling/wolf-illustration.png", altText: "wolf illustration"}},
-                {title: "Bear: Wisdom + Cosiness", img: {src: "/images/projects/darjeeling/bear-illustration.png", altText: "bear illustration"}},
-                {title: "Otter: Creativity + Play", img: {src: "/images/projects/darjeeling/otter-illustration.png", altText: "otter illustration"}}
+                {title: "Wolf: connection + adventure", img: {src: "/images/projects/darjeeling/dd-wolf.svg", altText: "wolf illustration"}},
+                {title: "Bear: Wisdom + Cosiness", img: {src: "/images/projects/darjeeling/dd-bear.svg", altText: "bear illustration"}},
+                {title: "Otter: Creativity + Play", img: {src: "/images/projects/darjeeling/dd-otter.svg", altText: "otter illustration"}}
             ]
         },
         content: 
@@ -181,12 +170,12 @@ flexibleLayout: [
         signposts: {
             columns: 6,
             items: [
-                {img: {src: "/images/projects/darjeeling/sunflower-blue.png", altText: "sunflower illustration"}},
-                {img: {src: "/images/projects/darjeeling/star-blue.png", altText: "star illustration"}},
-                {img: {src: "/images/projects/darjeeling/ivy-blue.png", altText: "ivy illustration"}},
-                {img: {src: "/images/projects/darjeeling/flower-blue.png", altText: "flower illustration"}},
-                {img: {src: "/images/projects/darjeeling/fern-blue.png", altText: "fern illustration"}},
-                {img: {src: "/images/projects/darjeeling/blue-bolt.png", altText: "bolt illustration"}}
+                {img: {src: "/images/projects/darjeeling/dd-flower.svg", altText: "sunflower illustration"}},
+                {img: {src: "/images/projects/darjeeling/dd-star.svg", altText: "star illustration"}},
+                {img: {src: "/images/projects/darjeeling/dd-ivy.svg", altText: "ivy illustration"}},
+                {img: {src: "/images/projects/darjeeling/dd-flower-2.svg", altText: "flower illustration"}},
+                {img: {src: "/images/projects/darjeeling/dd-fern.svg", altText: "fern illustration"}},
+                {img: {src: "/images/projects/darjeeling/dd-bolt.svg", altText: "bolt illustration"}}
             ]
         },
         content: 
@@ -230,4 +219,20 @@ featuredProjects:
     projects: ["MyEirene Ltd", "Sandancer EP"]
     backgroundColour: "secondary"
     cardTheme: "secondary"
+footer: 
+    footerLogo: 
+        src: "/images/Footer_logo.svg"
+        altText: "Footer Logo"
+    copyright: ""
+    footerLinks: [
+        {label: "FAQs", link: "/faqs"},
+        {label: "Privacy Policy", link: "/privacy-policy"},
+        {label: "Terms", link: "/terms-and-conditions"}
+    ]
+    footerSocial: [
+        {label: "twitter", link: "#"},
+        {label: "instagram", link: "#"},
+        {label: "youtube", link: "#"},
+        {label: "linkedin", link: "#"}
+    ]
 ---

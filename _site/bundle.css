@@ -775,36 +775,16 @@ section.hero.theme-contact .hero-image-title__wrapper .hero-meta-wrapper {
     order: 2;
 }
 
-section.hero .hero-icon {
+
+
+section.hero .hero-image-wrapper {
     display: none;
     @media (width >= 48rem) { 
-        display: block;
-        background-image: none;
-        background-position: right;
-        background-repeat: no-repeat;
-        background-size: contain;
+        display: flex;
+        justify-content: end;
         width: 300px;
         min-height: 300px;    
     }
-}
-
-section.hero .hero-icon-home {
-    display: none;
-}
-section.hero .hero-icon-portfolio {
-    background-image: url("/images/hero/soda-can.svg");
-}
-
-section.hero .hero-icon-experience {
-    background-image: url("/images/hero/watering-can.svg");
-}
-
-section.hero .hero-icon-about {
-    background-image: url("/images/hero/flower-pot.svg");
-}
-
-section.hero .hero-icon-contact {
-    background-image: url("/images/hero/battery.svg");
 }
 
 
@@ -1570,14 +1550,6 @@ section.text-block article.signpost p.caption {
     font-weight: 900;
 }
 
-section.text-block article.signpost .logo {
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    aspect-ratio: 1 / 1;
-}  
-
 section.text-block article.signpost.col-span-2 {
     grid-column: span 6;
     @media (width >= 48rem) { 
@@ -1585,6 +1557,12 @@ section.text-block article.signpost.col-span-2 {
     }
 }
 
+section.text-block article.signpost .signpost-logo-wrapper {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
 
 section.logo-grid {
     background-color: white;
@@ -1672,15 +1650,13 @@ section.logo-grid .item.bottom-right {
 
 section.logo-grid .logo-wrapper {
     display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100%;
-    max-height: calc(300 / 16 * 1rem);
 }
-
-section.logo-grid .logo-wrapper .logo {
-    width: 100%;   
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+ 
+section.logo-grid .logo-wrapper img {
+    width: 100%;
 }
 
 section.logo-grid .item .logo.orientation-square {
@@ -1690,55 +1666,5 @@ section.logo-grid .item .logo.orientation-square {
 section.logo-grid .item .logo.orientation-landscape {
     aspect-ratio: 7 / 1;
 }
+ 
 
-/*
-    section.logo-grid.theme-darjeeling .logo-dd-primary
-    section.logo-grid.theme-darjeeling .logo-dd-secondary
-    section.logo-grid.theme-darjeeling .logo-dd-logomark
-    section.logo-grid.theme-darjeeling .logo-dd-submark-primary
-    section.logo-grid.theme-darjeeling .logo-dd-submark-secondary
-*/
-
-
-section.logo-grid.theme-darjeeling .logo-dd-primary {
-    background-image: url('/images/projects/darjeeling/dd-logo-primary.svg');
-}
-
-section.logo-grid.theme-darjeeling .logo-dd-secondary {
-    background-image: url('/images/projects/darjeeling/dd-logo-secondary.svg');
-}
-
-section.logo-grid.theme-darjeeling .logo-dd-logomark {
-    background-image: url('/images/projects/darjeeling/dd-logo-logomark.svg');
-}
-
-section.logo-grid.theme-darjeeling .logo-dd-submark-primary {
-    background-image: url('/images/projects/darjeeling/dd-logo-submark-primary.svg');
-}
-
-section.logo-grid.theme-darjeeling .logo-dd-submark-secondary {
-    background-image: url('/images/projects/darjeeling/dd-logo-submark-secondary.svg');
-}
-
-section.logo-grid.theme-my-eirene .logo-me-primary {
-    background-image: url('/images/projects/my_eirene/me-logo-primary.svg');
-}
-
-section.logo-grid.theme-my-eirene .logo-me-secondary {
-    background-image: url('/images/projects/my_eirene/me-logo-secondary.svg');
-}
-
-section.logo-grid.theme-my-eirene .logo-me-logomark {
-    background-image: url('/images/projects/my_eirene/me-logo-logomark.svg');
-}
-
-section.logo-grid.theme-my-eirene .logo-me-submark {
-    background-image: url('/images/projects/my_eirene/me-logo-submark.svg');
-}
-
-/* map the icons to the classes */
-.logo-me-olive-branch {background-image: url('/images/projects/my_eirene/me-logo-logomark.svg');}
-
-.logo.logo-me-greek-goddess {background-image: url('/images/projects/my_eirene/me-goddess-of-peace.svg');}
-
-.logo.logo-me-sceptre-of-goddess {background-image: url('/images/projects/my_eirene/me-sceptre-of-the-goddess.svg');}

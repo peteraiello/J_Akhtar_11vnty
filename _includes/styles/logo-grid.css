@@ -84,15 +84,13 @@ section.logo-grid .item.bottom-right {
 
 section.logo-grid .logo-wrapper {
     display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100%;
-    max-height: calc(300 / 16 * 1rem);
 }
-
-section.logo-grid .logo-wrapper .logo {
-    width: 100%;   
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+ 
+section.logo-grid .logo-wrapper img {
+    width: 100%;
 }
 
 section.logo-grid .item .logo.orientation-square {
@@ -102,48 +100,4 @@ section.logo-grid .item .logo.orientation-square {
 section.logo-grid .item .logo.orientation-landscape {
     aspect-ratio: 7 / 1;
 }
-
-/*
-    section.logo-grid.theme-darjeeling .logo-dd-primary
-    section.logo-grid.theme-darjeeling .logo-dd-secondary
-    section.logo-grid.theme-darjeeling .logo-dd-logomark
-    section.logo-grid.theme-darjeeling .logo-dd-submark-primary
-    section.logo-grid.theme-darjeeling .logo-dd-submark-secondary
-*/
-
-
-section.logo-grid.theme-darjeeling .logo-dd-primary {
-    background-image: url('/images/projects/darjeeling/dd-logo-primary.svg');
-}
-
-section.logo-grid.theme-darjeeling .logo-dd-secondary {
-    background-image: url('/images/projects/darjeeling/dd-logo-secondary.svg');
-}
-
-section.logo-grid.theme-darjeeling .logo-dd-logomark {
-    background-image: url('/images/projects/darjeeling/dd-logo-logomark.svg');
-}
-
-section.logo-grid.theme-darjeeling .logo-dd-submark-primary {
-    background-image: url('/images/projects/darjeeling/dd-logo-submark-primary.svg');
-}
-
-section.logo-grid.theme-darjeeling .logo-dd-submark-secondary {
-    background-image: url('/images/projects/darjeeling/dd-logo-submark-secondary.svg');
-}
-
-section.logo-grid.theme-my-eirene .logo-me-primary {
-    background-image: url('/images/projects/my_eirene/me-logo-primary.svg');
-}
-
-section.logo-grid.theme-my-eirene .logo-me-secondary {
-    background-image: url('/images/projects/my_eirene/me-logo-secondary.svg');
-}
-
-section.logo-grid.theme-my-eirene .logo-me-logomark {
-    background-image: url('/images/projects/my_eirene/me-logo-logomark.svg');
-}
-
-section.logo-grid.theme-my-eirene .logo-me-submark {
-    background-image: url('/images/projects/my_eirene/me-logo-submark.svg');
-}
+ 

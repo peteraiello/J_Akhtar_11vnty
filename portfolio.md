@@ -15,7 +15,7 @@ header:
 hero: 
     title: "My Portfolio"
     image: 
-        src: "/images/hero/portfolio-soda-can.png"
+        src: "/images/hero/portfolio-soda-can.svg"
         altText: "Illustration of a cat next to a vase"
     backgroundColour: "secondary"
     theme: "portfolio"
@@ -36,7 +36,7 @@ footer:
     footerLogo: 
         src: "/images/Footer_logo.svg"
         altText: "Footer Logo"
-    copyright: "Jamila Y Akhtar 2026 All Rights Reserved"
+    copyright: ""
     footerLinks: [
         {label: "FAQs", link: "/faqs"},
         {label: "Privacy Policy", link: "/privacy-policy"},

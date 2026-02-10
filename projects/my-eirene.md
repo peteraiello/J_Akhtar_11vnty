@@ -23,14 +23,24 @@ brandSwatches: [
     '#EEEEF0',
     '#282828'
 ]
+header: 
+    logo: 
+        src: "/images/logo.svg"
+        altText: "header logo"
+    nav: [
+        {label: "Portfolio", link: "/portfolio", isActive: true},
+        {label: "Experience", link: "/experience"},
+        {label: "About", link: "/about"},
+        {label: "Contact", link: "/contact"}
+    ]
 flexibleLayout: [
     {
         name: "image-text",
         title: "Brief",
         theme: "project",
         image: {
-            src: "/images/projects/my_eirene/my-eirene-side.jpg",
-            altText: "Image of side"
+            src: "/images/projects/my_eirene/me-goddess-of-peace.svg",
+            altText: "my eirene goddess"
         },
         text: "
             <p>Craft a brand identity for an online mindfulness and wellbeing platform that operated via a membership subscription. It blended holistic and scientific practices and aimed to help people who were struggling with low to mid level mental health issues as a result of the pandemic, by providing them with non-medical, affordable options to help improve their mental wellbeing.</p>
@@ -40,7 +50,7 @@ flexibleLayout: [
     {
         name: "full-width-image",
         fullImage: {
-            src: "/images/projects/my_eirene/my-eirene-brand.png",
+            src: "/images/projects/my_eirene/me-logo-primary.svg",
             altText: "my eirene brand" 
         }
     },
@@ -68,37 +78,41 @@ flexibleLayout: [
                     title: "Primary",                
                     span: "full",
                     theme: "first-full",
-                    logo: {
-                        name: "me-primary",
+                    image: {
+                        src: "/images/projects/my_eirene/me-logo-primary.svg",
+                        altText: "my eirene primary",
                         orientation: "landscape"
-                    },
+                    }
                 },
                 {
                     title: "Secondary",
                     span: "full",
                     theme: "mid-full",
-                    logo: {
-                        name: "me-secondary",
+                        image: {
+                        src: "/images/projects/my_eirene/me-logo-secondary.svg",
+                        altText: "my eirene secondary",
                         orientation: "landscape"
-                    },
+                    }
                 },
                 {
                     title: "Submark",
                     span: "2/3",
                     theme: "bottom-left",
-                    logo: {
-                        name: "me-submark",
-                        orientation: "square"
-                    },
+                    image: {
+                        src: "/images/projects/my_eirene/me-logo-submark.svg",
+                        altText: "my eirene submark",
+                        orientation: "landscape"
+                    }
                 },
                 {
                     title: "Logomark",
                     span: "1/3",
                     theme: "bottom-right",
-                    logo: {
-                        name: "me-logomark",
-                        orientation: "square"
-                    },
+                    image: {
+                        src: "/images/projects/my_eirene/me-logo-logomark.svg",
+                        altText: "my eirene logomark",
+                        orientation: "landscape"
+                    }
                 },              
             ] 
         }
@@ -138,9 +152,9 @@ flexibleLayout: [
         signposts: {
             columns: 3,
             items: [
-                {title: "Olive Branch Crown", icon: "me-olive-branch" },
-                {title: "Eirene, Greek Goddess of Peace", icon: "me-greek-goddess" },
-                {title: "Sceptre of the Goddess", icon: "me-sceptre-of-goddess" },
+                {title: "Olive Branch Crown", img: {src: "/images/projects/my_eirene/me-logo-logomark.svg" }},
+                {title: "Eirene, Greek Goddess of Peace", img: {src: "/images/projects/my_eirene/me-goddess-of-peace.svg" } },
+                {title: "Sceptre of the Goddess", img: {src: "/images/projects/my_eirene/me-sceptre-of-the-goddess.svg" } },
             ]
         },
         title: "Iconography",
@@ -174,21 +188,16 @@ flexibleLayout: [
         }
     },
 ]
-header: 
-    logo: 
-        src: "/images/logo.svg"
-        altText: "header logo"
-    nav: [
-        {label: "Portfolio", link: "/portfolio", isActive: true},
-        {label: "Experience", link: "/experience"},
-        {label: "About", link: "/about"},
-        {label: "Contact", link: "/contact"}
-    ]
+featuredProjects: 
+    title: "Other Projects"
+    projects: ["Those Darjeeling Days", "Sandancer EP"]
+    backgroundColour: "secondary"
+    cardTheme: "secondary"
 footer: 
     footerLogo: 
         src: "/images/Footer_logo.svg"
         altText: "Footer Logo"
-    copyright: "Jamila Y Akhtar 2026 All Rights Reserved"
+    copyright: ""
     footerLinks: [
         {label: "FAQs", link: "/faqs"},
         {label: "Privacy Policy", link: "/privacy-policy"},

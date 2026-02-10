@@ -119,6 +119,11 @@ flexibleLayout: [
         }
     },
 ]
+featuredProjects: 
+    title: "Other Projects"
+    projects: ["MyEirene Ltd", "Those Darjeeling Days"]
+    backgroundColour: "secondary"
+    cardTheme: "secondary"
 header: 
     logo: 
         src: "/images/logo.svg"
@@ -133,7 +138,7 @@ footer:
     footerLogo: 
         src: "/images/Footer_logo.svg"
         altText: "Footer Logo"
-    copyright: "Jamila Y Akhtar 2026 All Rights Reserved"
+    copyright: ""
     footerLinks: [
         {label: "FAQs", link: "/faqs"},
         {label: "Privacy Policy", link: "/privacy-policy"},

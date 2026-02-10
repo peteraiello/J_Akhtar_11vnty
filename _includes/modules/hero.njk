@@ -14,9 +14,13 @@
                     </div>
                 {% endif %}
             </div>
-            {% if hero.theme %}
-                <div class="hero-icon {{ "hero-icon-" + (hero.theme or "portfolio") }}"></div>
+
+            {% if hero.image %}
+                <div class="hero-image-wrapper">
+                    <img src="{{ hero.image.src }}" alt="{{ hero.image.altText }}" />
+                </div>
             {% endif %}
+ 
         </div>    
     </div>
 </section>
