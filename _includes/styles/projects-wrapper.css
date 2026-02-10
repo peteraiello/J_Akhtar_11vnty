@@ -9,3 +9,19 @@
         margin-bottom: calc(55 / 16 * 1rem);
     }
 }
+
+.projects-wrapper {
+    display: flex;
+    gap: 1.25rem;
+    flex-direction: column;
+    @media (width >= 48rem) { 
+        flex-direction: row;
+    }
+}
+
+.projects-wrapper article {
+    width: auto;
+    @media (width >= 48rem) { 
+        width: 33.33%;
+    }
+}

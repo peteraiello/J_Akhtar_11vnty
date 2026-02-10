@@ -4,7 +4,7 @@
             <h3 class="projects-wrapper__title">Portfolio</h3>
         {% endif %}
         <div class="projects-wrapper">
-            <div class="grid">
+            {# <div class="grid"> #}
                 {% if collections.projects %}
                     {%- for project in collections.projects -%}
                         {% set cardImage = project.data.thumbnail.src %}
@@ -16,7 +16,7 @@
                         {% include "../components/card.njk" %}
                     {%- endfor -%}    
                 {% endif %}
-            </div>
+            {# </div> #}
         </div>     
     </div>
 </section> 

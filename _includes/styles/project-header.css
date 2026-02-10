@@ -3,6 +3,8 @@ section.project-header {
 }
 
 section.project-header ul.article-header__swatches {
+    margin-top: 1.25rem;
+    margin-bottom: 0;
     list-style: none;
 }
 

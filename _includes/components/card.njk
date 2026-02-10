@@ -1,4 +1,4 @@
-<article class="project-card col-span-4 {{ "theme-" + (cardTheme or "tertiary-offset") }}">
+<article class="project-card {{ "theme-" + (cardTheme or "tertiary-offset") }}">
     {% if cardImage %}
         <div class="project-card-image__wrapper">
             <img src="{{ cardImage }}" alt="{{ cardImageAlt }}" class="project-card__image" />

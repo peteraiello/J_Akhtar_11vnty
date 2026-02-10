@@ -422,8 +422,31 @@ form textarea {
     transition: all 200ms ease-in-out;
 }
 
-section {
-    padding: calc(69 / 16 * 1rem) 0;
+main.page section {
+    padding: calc(30 / 16 * 1rem) 0;
+    @media (width >= 48rem) {
+        padding: calc(69 / 16 * 1rem) 0;
+    }
+}
+
+main.project section {
+    padding: calc(28 / 16 * 1rem) 0;
+    @media (width >= 48rem) {
+        padding: calc(60 / 16 * 1rem) 0;
+    }
+}
+
+main.project section.bg-white + section.bg-white {
+    padding-top: 0;
+}
+
+main.project .project-button-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-bottom: calc(60 / 16 * 1rem);
+    @media (width >= 48rem) {
+        padding-bottom: calc(120 / 16 * 1rem);
+    }
 }
 
 section.bg-white {
@@ -477,8 +500,9 @@ a.button {
         padding: calc(10 / 16 * 1rem) calc(54 / 16 * 1rem);
     }
 }
+ 
 
-button.button,
+button.button-tertiary,
 a.button-tertiary {
     color: var(--tertiary-offset);
     background-color: var(--tertiary-color);
@@ -488,6 +512,18 @@ button.button-tertiary:hover,
 a.button-tertiary:hover {
     color: var(--white);
     background-color: var(--tertiary-offset);
+}
+
+button.button-tertiary-offset,
+a.button-tertiary-offset {
+    color: var(--tertiary-color);
+    background-color: var(--tertiary-offset);
+}
+
+button.button-tertiary-offset:hover,
+a.button-tertiary-offset:hover {
+    color: var(--tertiary-offset);
+    background-color: var(--tertiary-color);
 }
 
 
@@ -1006,6 +1042,22 @@ article.quick-link-card .quick-link-card-icon__watering-plant {
     }
 }
 
+.projects-wrapper {
+    display: flex;
+    gap: 1.25rem;
+    flex-direction: column;
+    @media (width >= 48rem) { 
+        flex-direction: row;
+    }
+}
+
+.projects-wrapper article {
+    width: auto;
+    @media (width >= 48rem) { 
+        width: 33.33%;
+    }
+}
+
 article.project-card {
     display: flex;
     gap: calc(20 / 16 * 1rem);
@@ -1020,12 +1072,15 @@ article.theme-tertiary-offset {
 }
 
 article.theme-secondary {
+    background-color: var(--white);
     border: 3px solid var(--secondary-color);
 }
 
-article.theme-secondary {
+section.bg-secondary article.theme-secondary {
     background-color: var(--white);
+    border: 3px solid var(--highlight-color);
 }
+
 
 article.theme-secondary .project-card__title {
     color: var(--secondary-color);
@@ -1194,9 +1249,12 @@ section.resume .resume-wrapper {
     }
 } 
 
+section.featured-projects.bg-white .featured-projects__title {
+    color: var(--secondary-color);
+}
+
 section.featured-projects .featured-projects__title {
     text-align: center;
-
 }
 
 section.featured-projects.bg-secondary .featured-projects__title {
@@ -1210,12 +1268,33 @@ section.featured-projects .featured-projects__title {
     }
 }
 
+section.featured-projects .featured-projects__wrapper {
+    display: flex;
+    gap: 1.25rem;
+    flex-direction: column;
+    justify-content: center;
+    @media (width >= 48rem) { 
+        flex-direction: row;
+    }
+}
+
+section.featured-projects .featured-projects__wrapper article {
+    width: auto;
+    @media (width >= 48rem) { 
+        width: 33.33%;
+    }
+}
+
+
+
 
 section.project-header {
     padding: 0;
 }
 
 section.project-header ul.article-header__swatches {
+    margin-top: 1.25rem;
+    margin-bottom: 0;
     list-style: none;
 }
 
@@ -1468,6 +1547,13 @@ section.text-block .text-block__wrapper {
     }
 }
 
+section.text-block .signposts-wrapper {
+    margin-bottom: calc(30 / 16 * 1rem);
+    @media (width >= 48rem) { 
+        margin-bottom: calc(60 / 16 * 1rem);
+    }
+}
+ 
 section.text-block .text-block__title {
     text-transform: uppercase;
 }
@@ -1492,19 +1578,13 @@ section.text-block article.signpost .logo {
     aspect-ratio: 1 / 1;
 }  
 
-section.text-block article.signpost .logo.logo-me-olive-branch {
-    background-image: url('/images/projects/my_eirene/me-logo-logomark.svg');
+section.text-block article.signpost.col-span-2 {
+    grid-column: span 6;
+    @media (width >= 48rem) { 
+        grid-column: span 2;
+    }
 }
 
-
-section.text-block article.signpost .logo.logo-me-greek-goddess {
-    background-image: url('/images/projects/my_eirene/me-goddess-of-peace.svg');
-}
-
-
-section.text-block article.signpost .logo.logo-me-sceptre-of-goddess {
-    background-image: url('/images/projects/my_eirene/me-sceptre-of-the-goddess.svg');
-}
 
 section.logo-grid {
     background-color: white;
@@ -1655,3 +1735,10 @@ section.logo-grid.theme-my-eirene .logo-me-logomark {
 section.logo-grid.theme-my-eirene .logo-me-submark {
     background-image: url('/images/projects/my_eirene/me-logo-submark.svg');
 }
+
+/* map the icons to the classes */
+.logo-me-olive-branch {background-image: url('/images/projects/my_eirene/me-logo-logomark.svg');}
+
+.logo.logo-me-greek-goddess {background-image: url('/images/projects/my_eirene/me-goddess-of-peace.svg');}
+
+.logo.logo-me-sceptre-of-goddess {background-image: url('/images/projects/my_eirene/me-sceptre-of-the-goddess.svg');}

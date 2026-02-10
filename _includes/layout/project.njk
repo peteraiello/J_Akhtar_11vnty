@@ -32,9 +32,11 @@
 {%- endfor -%}
 
 <div class="container">
-    <div class="button-wrapper">
-        <a class="button button-primary" href="/portfolio">Return to Portfolio</a>
+    <div class="project-button-wrapper">
+        <a class="button {{"button-" + (buttonTheme) or "primary"}}" href="/portfolio">Return to Portfolio</a>
     </div>
 </div>
+
+{% include "../modules/featuredProjects.njk" %} 
 
 {% include "../footer.njk" %}

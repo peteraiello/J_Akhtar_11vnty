@@ -5,6 +5,7 @@ title: "MyEirene Ltd"
 tags: project
 specializations: ["Branding"]
 excerpt: "A branding and graphic project for a brand new creative blog that has recently been set up."
+posttype: "project"
 startDate: 2025-01-15
 endDate: 2025-03-15
 thumbnail:
@@ -199,4 +200,5 @@ footer:
         {label: "youtube", link: "#"},
         {label: "linkedin", link: "#"}
     ]
+buttonTheme: "tertiary-offset"
 ---

@@ -1,6 +1,9 @@
+section.featured-projects.bg-white .featured-projects__title {
+    color: var(--secondary-color);
+}
+
 section.featured-projects .featured-projects__title {
     text-align: center;
-
 }
 
 section.featured-projects.bg-secondary .featured-projects__title {
@@ -13,3 +16,22 @@ section.featured-projects .featured-projects__title {
         margin-bottom: calc(40 / 16 * 1rem);
     }
 }
+
+section.featured-projects .featured-projects__wrapper {
+    display: flex;
+    gap: 1.25rem;
+    flex-direction: column;
+    justify-content: center;
+    @media (width >= 48rem) { 
+        flex-direction: row;
+    }
+}
+
+section.featured-projects .featured-projects__wrapper article {
+    width: auto;
+    @media (width >= 48rem) { 
+        width: 33.33%;
+    }
+}
+
+

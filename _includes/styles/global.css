@@ -174,8 +174,31 @@ form textarea {
     transition: all 200ms ease-in-out;
 }
 
-section {
-    padding: calc(69 / 16 * 1rem) 0;
+main.page section {
+    padding: calc(30 / 16 * 1rem) 0;
+    @media (width >= 48rem) {
+        padding: calc(69 / 16 * 1rem) 0;
+    }
+}
+
+main.project section {
+    padding: calc(28 / 16 * 1rem) 0;
+    @media (width >= 48rem) {
+        padding: calc(60 / 16 * 1rem) 0;
+    }
+}
+
+main.project section.bg-white + section.bg-white {
+    padding-top: 0;
+}
+
+main.project .project-button-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-bottom: calc(60 / 16 * 1rem);
+    @media (width >= 48rem) {
+        padding-bottom: calc(120 / 16 * 1rem);
+    }
 }
 
 section.bg-white {
@@ -229,8 +252,9 @@ a.button {
         padding: calc(10 / 16 * 1rem) calc(54 / 16 * 1rem);
     }
 }
+ 
 
-button.button,
+button.button-tertiary,
 a.button-tertiary {
     color: var(--tertiary-offset);
     background-color: var(--tertiary-color);
@@ -240,6 +264,18 @@ button.button-tertiary:hover,
 a.button-tertiary:hover {
     color: var(--white);
     background-color: var(--tertiary-offset);
+}
+
+button.button-tertiary-offset,
+a.button-tertiary-offset {
+    color: var(--tertiary-color);
+    background-color: var(--tertiary-offset);
+}
+
+button.button-tertiary-offset:hover,
+a.button-tertiary-offset:hover {
+    color: var(--tertiary-offset);
+    background-color: var(--tertiary-color);
 }
 
 

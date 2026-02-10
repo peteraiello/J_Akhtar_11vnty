@@ -6,7 +6,7 @@
             </div>
         {% endif %}
         {% if collections.projects %}
-            <div class="grid">
+            <div class="featured-projects__wrapper">
                 {%- for project in collections.projects -%}
                     {% set cardImage = project.data.thumbnail.src %}
                     {% set cardImageAlt = project.data.thumbnail.altText %}
@@ -14,8 +14,10 @@
                     {% set cardExcerpt = project.data.excerpt %}      
                     {% set cardLink = project.data.permalink %}
                     {% set cardTheme = featuredProjects.cardTheme %}
-                    {% if cardTitle in featuredProjects.projects %}
-                        {% include "../components/card.njk" %}
+                    {% if featuredProjects.projects %}
+                        {% if cardTitle in (featuredProjects.projects) %}
+                            {% include "../components/card.njk" %}
+                        {% endif %}                    
                     {% endif %}
                 {%- endfor -%} 
             </div>

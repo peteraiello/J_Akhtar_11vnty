@@ -1,5 +1,5 @@
 {% if signposts %}
-    <div class="grid">
+    <div class="grid signposts-wrapper">
         {%- for signpost in signposts -%}
             <article class="signpost {% if columns === 3 %}col-span-4{% elif columns === 4 %}col-span-3{% elif columns === 2 %}col-span-6{% elif columns === 6 %}col-span-2{% endif %}">
                 {% if(signpost.img.src) %}

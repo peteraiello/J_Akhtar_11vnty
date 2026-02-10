@@ -12,12 +12,15 @@ article.theme-tertiary-offset {
 }
 
 article.theme-secondary {
+    background-color: var(--white);
     border: 3px solid var(--secondary-color);
 }
 
-article.theme-secondary {
+section.bg-secondary article.theme-secondary {
     background-color: var(--white);
+    border: 3px solid var(--highlight-color);
 }
+
 
 article.theme-secondary .project-card__title {
     color: var(--secondary-color);
