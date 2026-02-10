@@ -12,7 +12,7 @@ export default function(eleventyConfig) {
     };
 
     eleventyConfig.addPassthroughCopy("bundle.css");
-    eleventyConfig.addPassthroughCopy("images/favicon");
+    eleventyConfig.addPassthroughCopy("images/favicon/*");
     eleventyConfig.addPassthroughCopy("scripts");
     eleventyConfig.addPassthroughCopy("images/*.svg");
     eleventyConfig.addPassthroughCopy("images/hero/creative-juice.svg");

@@ -4,7 +4,7 @@
             <div class="image-text-image-column">
                 {% if imageTextImage.src %}
                     <div class="image-text-image__wrapper {{ "image-text-orientation__" + (imageTextImage.orientation or "portrait") }}">
-                        <img src="{{ imageTextImage.src }}" alt="{{ imageTextImage.altText }}" />
+                        <img loading="lazy" src="{{ imageTextImage.src }}" alt="{{ imageTextImage.altText }}" />
                     </div>
                 {% endif %}
             </div>
@@ -19,7 +19,7 @@
                 {% endif %}            
                 {% if imageTextButton.link %}
                     <div class="button-wrapper">
-                        <a href="{{ imageTextButton.link }}" class="{{ "button button-tertiary button-" + (button.backgroundColour or "secondary") }}">{{ imageTextButton.text }} →</a>
+                        <a href="{{ imageTextButton.link }}" class="{{ "button button-tertiary button-" + (button.backgroundColour or "secondary") }}">{{ imageTextButton.text }}</a>
                     </div>
                 {% endif %}
                 {% if imageTextButtons %}

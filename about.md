@@ -73,7 +73,7 @@ footer:
     footerLogo: 
         src: "/images/Footer_logo.svg"
         altText: "Footer Logo"
-    copyright: "Jamila Y Akhtar 2025 All Rights Reserved"
+    copyright: "Jamila Y Akhtar 2026 All Rights Reserved"
     footerLinks: [
         {label: "FAQs", link: "/faqs"},
         {label: "Privacy Policy", link: "/privacy-policy"},
