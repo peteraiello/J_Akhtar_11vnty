@@ -48,7 +48,10 @@ h6 {
 
 /* heading 72px */
 .heading-xl {
-    font-size: clamp(2rem, 4vw, 4.5rem);
+    font-size: calc(36 / 16 * 1rem);
+    @media (width >= 48rem) { 
+        font-size: calc(72 / 16 * 1rem);
+    }
 }
 /* heading 60px */
 .heading-lg {

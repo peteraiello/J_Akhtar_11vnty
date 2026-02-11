@@ -24,11 +24,20 @@
                     <div>
                         <h3 class="footer-col-title">SOCIAL MEDIA</h3>
                         <ul class="footer-social-media">
-                            {%- for social in footer.footerSocial -%}
-                                <li class="{{ social.label }}"><a href="{{ social.link }}">
-                                    <span>{{social.label}}</span></a>
-                                </li>
-                            {%- endfor -%}
+                            {% if footer.footerSocial %}
+                                {%- for social in footer.footerSocial -%}
+                                    <li class="{{ social.label }}"><a href="{{ social.link }}">
+                                        <span>{{social.label}}</span></a>
+                                    </li>
+                                {%- endfor -%}
+                            {% else %}
+                                <li class="instagram">
+                                    <a href="#"><span>instagram</span></a>
+                                </li>        
+                                <li class="linkedin">
+                                    <a href="#"><span>linkedin</span></a>
+                                </li>        
+                            {% endif %}
                         </ul>
                     </div>
                 </div>

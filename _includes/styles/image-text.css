@@ -2,6 +2,10 @@ section.image-text.bg-secondary {
     background-color: var(--secondary-color);
 }
 
+section.image-text.bg-white .image-text-text-column {
+    color: var(--dark);
+}
+
 section.image-text.bg-white .image-text__title {
     color: var(--primary-color);
 }
@@ -56,23 +60,22 @@ section.image-text.left-to-right .image-text-image-column .image-text-image__wra
     }
 }
 
-section.image-text.theme-project.right-to-left .image-text-image-column {
+section.image-text.right-to-left .image-text-image-column {
     grid-column: span 12;
-    @media (width >= 40rem) { 
+    @media (width >= 48rem) { 
         grid-column-start: 9;
         grid-column-end: 13;
     }
 }
 
 section.image-text.theme-project.right-to-left .image-text-text-column {
-    color: var(--dark);
     grid-column: span 12;
     @media (width >= 40rem) { 
         grid-column: span 7;
     }
 }
 
-section.image-text.theme-project .image-text-text-column .image-text__title {
+section.image-text.bg-white .image-text-text-column .image-text__title {
     color: var(--dark);
     text-transform: uppercase;
 }
@@ -112,7 +115,7 @@ section.image-text .row {
 section.image-text .image-text-image-column {
     grid-column: span 12; 
     @media (width >= 48rem) { 
-        grid-column: span 4;
+        grid-column: span 5;
     }
 }
 
@@ -126,30 +129,31 @@ section.image-text .image-text-text-column {
     }
 }
 
-section.image-text.has-graphic .image-text-text-column {
+section.image-text.left-to-right .image-text-image-column {
     grid-column: span 12;
     @media (width >= 48rem) {
-        grid-column: span 8;
-    }
-    @media (width >= 64rem) { 
-        margin-right: calc(200 / 16 * 1rem); 
-        grid-column: span 6;
+        grid-column: span 4;
     }
 }
 
-section.image-text .image-text-graphic {
+section.image-text.has-graphic .image-text-text-column {
+    grid-column: span 12;
+    @media (width >= 48rem) { 
+        grid-column: span 5;
+    }
+}
+
+section.image-text.has-graphic .image-text-graphic {
     display: none; 
-    @media (width >= 64rem) {
+    transform: scale(70%);
+    background-image: url("/images/hero/flower-pot.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    @media (width >= 48rem) {
         display: flex;
         align-items: flex-end;
         grid-column: span 2;
     }
-}
-
-section.image-text .image-text-graphic {
-    transform: scale(70%);
-    background-image: url("/images/hero/flower-pot.svg");
-    background-repeat: no-repeat;
 }
 
 section.image-text .buttons-wrapper {

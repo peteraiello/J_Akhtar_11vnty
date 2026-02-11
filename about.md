@@ -79,12 +79,7 @@ footer:
         {label: "Privacy Policy", link: "/privacy-policy"},
         {label: "Terms", link: "/terms-and-conditions"}
     ]
-    footerSocial: [
-        {label: "twitter", link: "#"},
-        {label: "instagram", link: "#"},
-        {label: "youtube", link: "#"},
-        {label: "linkedin", link: "#"}
-    ]
+   
 ---
 
 

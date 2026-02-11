@@ -13,7 +13,7 @@ header:
         {label: "Contact", link: "/contact"}
     ]
 hero: 
-    title: "My Portfolio"
+    title: "My <br />Portfolio"
     image: 
         src: "/images/hero/portfolio-soda-can.svg"
         altText: "Illustration of a cat next to a vase"
@@ -42,10 +42,5 @@ footer:
         {label: "Privacy Policy", link: "/privacy-policy"},
         {label: "Terms", link: "/terms-and-conditions"}
     ]
-    footerSocial: [
-        {label: "twitter", link: "#"},
-        {label: "instagram", link: "#"},
-        {label: "youtube", link: "#"},
-        {label: "linkedin", link: "#"}
-    ]
+   
 ---
