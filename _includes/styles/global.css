@@ -333,3 +333,7 @@ button.form-button {
     padding: calc(5 / 16 * 1rem) calc(27 / 16 * 1rem);
     background-color: transparent;
 }
+
+.page-title {
+    margin-bottom: 1rem;
+}

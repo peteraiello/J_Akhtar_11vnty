@@ -1,0 +1,12 @@
+{% include "../head.njk" %}
+
+{% include "../header.njk" %}
+
+<section class="bg-white">
+	<div class="container">
+		<h1 class="page-title">{{ title }}</h1>
+		<div class="page-content">{{ content | safe }}</div>
+	</div>
+</section>
+
+{% include "../footer.njk" %}
