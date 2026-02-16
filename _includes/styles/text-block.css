@@ -42,3 +42,7 @@ section.text-block article.signpost .signpost-logo-wrapper {
     flex-direction: column;
     justify-content: center;
 }
+
+section.text-block article.signpost .signpost-logo-wrapper img {
+    width: 100%;
+}

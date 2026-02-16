@@ -4,8 +4,7 @@ section.project-header.bg-white {
 }
 
 section.project-header ul.article-header__swatches {
-    margin-top: 1.25rem;
-    margin-bottom: 0;
+    margin: 1.25rem 0;
     list-style: none;
 }
 
