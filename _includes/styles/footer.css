@@ -126,4 +126,7 @@ p.footer-copyright-text {
     display: flex;   
 }
 
-
+.footer-logo {
+    width: calc(101 / 16 * 1rem);
+    height: calc(101 / 16 * 1rem);
+}

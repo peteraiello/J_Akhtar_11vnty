@@ -6,11 +6,11 @@
     <div class="grid">
         {%- for card in quickLinks.cards -%}
             <article class="quick-link-card quick-link-card-index__{{ loop.index }}">  
-                {% if card.icon %}
-                    <div class="quick-link-card__icon quick-link-card-icon__{{ card.icon or "drink-up" }}">
-                        <span class="visually-hidden">icon</span>
+                {% if card.image %}
+                    <div class="image-wrapper">
+                        <img src="{{ card.image.src }}" alt="{{ card.image.altText }}" class="quick-link-card__image" />
                     </div>
-                {% endif %}
+                {% endif %}                
                 {% if card.title %}
                     <h4 class="quick-link-card__title heading-md">{{card.title}}</h4>
                 {% endif %}

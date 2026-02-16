@@ -154,6 +154,7 @@ section.image-text.has-graphic .image-text-graphic {
     background-image: url("/images/hero/flower-pot.svg");
     background-position: center;
     background-repeat: no-repeat;
+    background-size: contain;
     @media (width >= 48rem) {
         display: flex;
         align-items: flex-end;

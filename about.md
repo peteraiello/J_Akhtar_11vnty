@@ -67,7 +67,7 @@ form:
     backgroundColour: "secondary"
     title: "Keen to work with me? <span>Then please get in touch!</span>"
     graphic: 
-        src: "/images/form/cherry-punnet.png"
+        src: "/images/form/cherry-punnet.svg"
         altText: "Cherry Punnet"
 footer: 
     footerLogo: 

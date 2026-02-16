@@ -34,20 +34,13 @@ article.quick-link-card .quick-link-card-image__wrapper {
     max-width: 386px;
 }
 
-article.quick-link-card .quick-link-card__image {
+article.quick-link-card .image-wrapper .quick-link-card__image {
     width: 100%;
     height: auto;
 }
 
-article.quick-link-card .quick-link-card__icon {
-    background-size: cover;
-    aspect-ratio: 386 / 291;
+article.quick-link-card .image-wrapper {
+    width: 100%;
 }
 
-article.quick-link-card .quick-link-card-icon__drink-up {
-    background-image: url("/images/drink-up.svg"); 
-}
-
-article.quick-link-card .quick-link-card-icon__watering-plant {
-    background-image: url("/images/watering-plant.svg"); 
-}
+ 

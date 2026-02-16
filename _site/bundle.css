@@ -255,8 +255,10 @@ p.footer-copyright-text {
     display: flex;   
 }
 
-
-
+.footer-logo {
+    width: calc(101 / 16 * 1rem);
+    height: calc(101 / 16 * 1rem);
+}
 
 html, 
 body {
@@ -1086,6 +1088,7 @@ section.image-text.has-graphic .image-text-graphic {
     background-image: url("/images/hero/flower-pot.svg");
     background-position: center;
     background-repeat: no-repeat;
+    background-size: contain;
     @media (width >= 48rem) {
         display: flex;
         align-items: flex-end;
@@ -1141,24 +1144,16 @@ article.quick-link-card .quick-link-card-image__wrapper {
     max-width: 386px;
 }
 
-article.quick-link-card .quick-link-card__image {
+article.quick-link-card .image-wrapper .quick-link-card__image {
     width: 100%;
     height: auto;
 }
 
-article.quick-link-card .quick-link-card__icon {
-    background-size: cover;
-    aspect-ratio: 386 / 291;
+article.quick-link-card .image-wrapper {
+    width: 100%;
 }
 
-article.quick-link-card .quick-link-card-icon__drink-up {
-    background-image: url("/images/drink-up.svg"); 
-}
-
-article.quick-link-card .quick-link-card-icon__watering-plant {
-    background-image: url("/images/watering-plant.svg"); 
-}
-
+ 
 
 .projects-filters {
     display: flex;

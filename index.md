@@ -37,20 +37,26 @@ quickLinks:
     cards: [{
         title: "Portfolio",
         blurb: "<p>A carefully curated treasure trove of my creations.</p>",
-        icon: "drink-up",
+        image: {
+            src: "images/drink-up.svg",
+            altText: "drink up"
+        },
         button: 
             {
-                text: "Click here",
+                text: "View Portfolio",
                 link: "/portfolio"
             }
     },
     {
         title: "Experience",
         blurb: "<p>A list of my credentials and my accomplishments.</p>",
-        icon: "watering-plant",
+        image: {
+            src: "images/watering-plant.svg",
+            altText: "Watering plant"
+        },
         button: 
             {
-                text: "Click here",
+                text: "Learn More",
                 link: "/experience"
             }
     }]
