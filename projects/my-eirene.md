@@ -199,9 +199,8 @@ footer:
         altText: "Footer Logo"
     copyright: ""
     footerLinks: [
-        {label: "FAQs", link: "/faqs"},
-        {label: "Privacy Policy", link: "/privacy-policy"},
-        {label: "Terms", link: "/terms-and-conditions"}
+        {label: "FAQs", link: "/faqs", target: "_self"},        {label: "Privacy Policy", link: "https://www.iubenda.com/privacy-policy/49373695", target: "_blank"},
+        {label: "Cookie Policy", link: "https://www.iubenda.com/privacy-policy/49373695/cookie-policy", target: "_blank"}
     ]
    
 buttonTheme: "tertiary-offset"

@@ -9,9 +9,9 @@
                     <ul>                        
                         {%- for link in footer.footerLinks -%}
                             <li>
-                                <a href="{{link.link}}">{{ link.label }}</a>
+                                <a href="{{link.link}}" target="{{ (link.target or "_self") }}">{{ link.label }}</a>
                             </li>
-                        {%- endfor -%}
+                        {%- endfor -%}                          
                     </ul> 
                 </nav>
             </div>
