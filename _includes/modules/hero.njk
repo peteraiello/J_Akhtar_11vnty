@@ -1,22 +1,28 @@
 <section class="hero {{ "theme-" + (hero.theme or "home") }} {{ "bg-" + (hero.backgroundColour or "white") }}">    
-    <div class="container">
+    <div class="container">       
         <div class="grid">
-            {% if hero.backgroundImage %}
-                <div class="hero-background-image" style="background-image: url('{{hero.backgroundImage.src}}')"><span class="visually-hidden">background container</span></div>
+            {% if hero.theme === "home" %}
+                <div class="hero-wrapper">
             {% endif %}
-            <div class="hero-meta-wrapper">
-                {% if hero.title %}
-                    <h1 class="hero-title heading-xl">{{ hero.title | safe }}</h1>
+                {% if hero.backgroundImage %}
+                    <div class="hero-background-image" style="background-image: url('{{hero.backgroundImage.src}}')"><span class="visually-hidden">background container</span></div>
                 {% endif %}
-                {% if hero.strapline %}
-                    <div class="hero-strapline">
-                        <p>{{ hero.strapline }}</p>
+                <div class="hero-meta-wrapper">
+                    {% if hero.title %}
+                        <h1 class="hero-title heading-xl">{{ hero.title | safe }}</h1>
+                    {% endif %}
+                    {% if hero.strapline %}
+                        <div class="hero-strapline">
+                            <p>{{ hero.strapline }}</p>
+                        </div>
+                    {% endif %}
+                </div>
+                {% if hero.image %}
+                    <div class="hero-image-wrapper"> 
+                        <img src="{{ hero.image.src }}" alt="{{ hero.image.altText }}" />
                     </div>
                 {% endif %}
-            </div>
-            {% if hero.image %}
-                <div class="hero-image-wrapper"> 
-                    <img src="{{ hero.image.src }}" alt="{{ hero.image.altText }}" />
+            {% if hero.theme === "home" %}
                 </div>
             {% endif %}
         </div>    

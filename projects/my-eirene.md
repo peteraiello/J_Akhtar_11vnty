@@ -6,8 +6,8 @@ tags: project
 specializations: ["Branding"]
 excerpt: "A branding and graphic project for a brand new creative blog that has recently been set up."
 posttype: "project"
-startDate: 2021-03-00
-endDate: 2024-04-00
+startDate: 2021-03-04
+endDate: 2024-05-02
 thumbnail:
     src: "/images/projects/my_eirene.png"
     altText: "My Eirene thumbnail"
@@ -76,8 +76,8 @@ flexibleLayout: [
             items: [
                 {
                     title: "Primary",                
-                    span: "full",
-                    theme: "first-full",
+                    span: "2/3",
+                    theme: "top-left",
                     image: {
                         src: "/images/projects/my_eirene/me-logo-primary.svg",
                         altText: "my eirene primary",
@@ -86,8 +86,8 @@ flexibleLayout: [
                 },
                 {
                     title: "Secondary",
-                    span: "full",
-                    theme: "mid-full",
+                    span: "1/3",
+                    theme: "top-right",
                         image: {
                         src: "/images/projects/my_eirene/me-logo-secondary.svg",
                         altText: "my eirene secondary",

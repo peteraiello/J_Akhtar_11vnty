@@ -1,7 +1,11 @@
 section.contact-form .column-text {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
+    gap: 1rem;
+    @media (width >= 48rem) { 
+        flex-direction: column;
+    }
 }
 
 section.contact-form.theme-portfolio .column-text {
@@ -107,6 +111,7 @@ section.contact-form.bg-secondary form label {
 
 section.bg-secondary form textarea, 
 section.bg-secondary form input {
+    padding: calc(12 / 16 * 1rem);
     outline: 1px solid var(--highlight-color);
 }
 

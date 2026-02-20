@@ -51,3 +51,7 @@ section.text-block article.signpost .signpost-logo-wrapper img {
 section.text-block article.signpost .signpost-logo-wrapper.aspect-ratio-square img {
     aspect-ratio: 1 / 1;
 }
+
+section.text-block h3.text-block__title {
+    font-family: "marine-up", sans-serif;
+}

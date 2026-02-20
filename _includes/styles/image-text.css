@@ -34,6 +34,13 @@ section.image-text.right-to-left .image-text-graphic {
     order: 3;
 }
 
+section.image-text.right-to-left .image-text-image-column {
+    order: 1;
+    @media (width >= 48rem) { 
+        order: 2;
+    }
+}
+
 section.image-text.right-to-left .image-text-image-column .image-text-image__wrapper {
     justify-self: flex-start;
     @media (width >= 48rem) { 
@@ -172,3 +179,13 @@ section.image-text .buttons-wrapper {
         flex-direction: row;
     }
 }
+
+section.image-text.bg-white.theme-about .image-text-text-column h3.image-text__title {
+    color: var(--primary-color);
+    font-family: "rl-aqva", sans-serif;
+}
+
+section.image-text.theme-project .grid .image-text-text-column {
+    gap: calc(8 / 16 * 1rem);
+}
+

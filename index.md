@@ -20,6 +20,7 @@ hero:
     backgroundColour: "white"
     theme: "home"
 imageText: 
+    theme: "about"
     backgroundColour: "secondary"
     image: 
         src: "/images/jamila-portrait.jpg"

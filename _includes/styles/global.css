@@ -299,6 +299,11 @@ a.button-primary:hover {
     background-color: var(--secondary-color);
 }
 
+button.button-tertiary, 
+a.button-tertiary {
+    border: 3px solid var(--tertiary-offset);
+}
+
 a.filter-button,
 button.filter-button {
     font-family: "marine-up", sans-serif;

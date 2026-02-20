@@ -36,7 +36,8 @@ flexibleLayout: [
 
             <p>The cover art needed to work across a variety of social media platforms as well as potential physical media, i.e. physical albums, so the artwork had to work across several different sets of dimensions.</p>
 
-            <p>It was also important for the art to represent the album’s overarching theme.</p>"
+            <p>It was also important for the art to represent the album’s overarching theme.</p>",
+        theme: "project"
     },
     {
         name: "full-width-image",
@@ -58,7 +59,9 @@ flexibleLayout: [
             <p>Each song had a specific theme, focusing on people that were part of the musician’s life who he had been heavily inspired by. This was seen in the naming of the album as well, which drove the direction I took when developing the artwork. </p>
             
             <p>We wanted it to embody a sense of wistfulness, of sweet memories and sentimentality of a place once visited but since pivoted away from in search of more hopeful shores. It follows the ebb and flow of life’s cyclic nature.</p>
-            "
+            ",
+        theme: "project"
+
     },
     {
         name: "text-block", 

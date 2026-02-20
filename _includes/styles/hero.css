@@ -6,38 +6,37 @@ section.hero > .container {
     position: relative;
 }
 
-section.hero.theme-home .hero-background-image {
-    display: none;
-    height: 100%;
-    position: absolute;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: contain;
-    max-width: 700px;
-    right: 0;
+section.hero.theme-home {
+    overflow: hidden;
+    padding: 0;
 }
+ 
 
-@media (width >= 40rem) { 
-    section.hero.theme-home .hero-background-image {
-        display: block;
-    }
-}
-
-section.hero .hero-background-image span {
-    display: none;
-}
-
-section.hero.theme-home .hero-meta-wrapper {
+section.hero.theme-home .hero-wrapper {
+    position: relative;
     display: flex;
-    flex-direction: column;
-    gap: calc(27 / 16 * 1rem);
-    padding-top: calc(20 / 16 * 1rem);
-    padding-bottom: calc(24 / 16 * 1rem);
-    @media (width >= 40rem) { 
-        padding-top: calc(124 / 16 * 1rem);
-        padding-bottom: calc(240 / 16 * 1rem);
-    }
+    flex-direction: row;
+    grid-column-start: 2;
+    grid-column-end: 12;
+}
+
+section.hero.theme-home .hero-wrapper .hero-meta-wrapper {
+    background-color: transparent;
+}
+
+section.hero.theme-home .hero-wrapper .hero-background-image {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+ 
+section.hero.theme-home .hero-wrapper .hero-meta-wrapper {
+    padding: calc(140 / 16 * 1rem) 0;
+    order: 1;
 }
 
 section.hero.theme-home .hero-strapline,
@@ -93,13 +92,6 @@ section.hero .hero-image-wrapper {
     }
 }
  
-section.hero.theme-home .hero-meta-wrapper {
-    grid-column-start: 1;
-    grid-column-end: 12;
-    @media (width >= 80rem) { 
-        grid-column-start: 2;
-    }
-}
 
 section.hero.theme-home .hero-meta-wrapper .hero-title {
     text-align: left;
@@ -112,13 +104,8 @@ section.hero.theme-portfolio .hero-image-wrapper {
     grid-column-end: 6;    
 }  
 
-section.hero.theme-about .hero-meta-wrapper {
-    grid-column-start: 1;
-    grid-column-end: 12;
-    @media (width >= 48rem) { 
-        grid-column-start: 3;
-        grid-column-end: 7;
-    }
+section.hero.theme-portfolio .hero-image-wrapper img {
+    max-height: 400px;
 }
 
 section.hero.theme-about .hero-image-wrapper {

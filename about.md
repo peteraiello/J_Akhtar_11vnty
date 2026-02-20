@@ -20,6 +20,7 @@ hero:
         altText: "Illustration of a cat next to a vase"
     backgroundColour: "secondary"
 imageText: 
+    theme: "about"
     image: 
         src: "/images/about-jamila.jpg"
         altText: "Jamila portrait"
@@ -29,8 +30,8 @@ imageText:
     <p>Beyond design, I can be found with my nose deep in a book, doing sudoku, getting lost in some type of arts or crafts, dancing the day away, baking delicious sweet treats or being outdoors where I will either be wandering on a hike, submerged in the ocean or galivanting through a botanical garden.</p>
     "
     buttons: [
-        {text: "My Experience", link: "/experience", backgroundColour: "primary", border: true},
-        {text: "My Portfolio",  link: "/portfolio",  backgroundColour: "primary", border: true}
+        {text: "My Experience", link: "/experience", backgroundColour: "tertiary", border: true},
+        {text: "My Portfolio",  link: "/portfolio",  backgroundColour: "tertiary", border: true}
     ]
     leftToRight: false    
 quickLinks: 

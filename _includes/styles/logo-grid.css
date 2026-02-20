@@ -40,7 +40,6 @@ section.logo-grid .item.first-full {
     border-top-right-radius: calc(30 / 16 * 1rem);
 }
 
- 
 section.logo-grid .item.mid-left {
     border-width: 3px 3px 3px 3px;
 }
@@ -55,6 +54,7 @@ section.logo-grid .item.mid-right {
 section.logo-grid .item.mid-full {
     border-width: 3px;
 }
+
 
 
 section.logo-grid .item.bottom-left {
@@ -86,6 +86,27 @@ section.logo-grid .item:last-of-type {
         border-width: 0px 3px 3px 3px;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
+    }
+}
+
+section.logo-grid .item.top-left {
+    border-top-left-radius: calc(30 / 16 * 1rem);
+    border-top-right-radius: calc(30 / 16 * 1rem);
+    border-width: 3px 3px 0px 3px;
+    @media (width >= 48rem) { 
+        border-width: 3px 3px 3px 3px;
+        border-top-right-radius: 0;
+
+    }
+}
+
+section.logo-grid .item.top-right {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-width: 3px;
+    @media (width >= 48rem) {
+        border-width: 3px 3px 3px 0px;
+        border-top-right-radius: calc(30 / 16 * 1rem);
     }
 }
 
