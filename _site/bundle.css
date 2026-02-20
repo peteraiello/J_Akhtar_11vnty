@@ -769,6 +769,19 @@ section.hero.theme-about .hero-image-wrapper {
     }
 }
 
+section.hero.theme-about .hero-meta-wrapper {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    @media (width >= 48rem) { 
+        grid-column-start: 3;
+        grid-column-end: 8;
+    }
+}
+
+section.hero.theme-about .hero-meta-wrapper .hero-title {
+    text-align: left;
+}
+
 section.hero.theme-experience .hero-meta-wrapper .hero-title {
     text-align: left;
 }
