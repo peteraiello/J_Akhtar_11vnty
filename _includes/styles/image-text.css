@@ -42,6 +42,10 @@ section.image-text.right-to-left .image-text-image-column {
 }
 
 section.image-text.right-to-left .image-text-image-column .image-text-image__wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     justify-self: flex-start;
     @media (width >= 48rem) { 
         justify-self: flex-end;
@@ -91,6 +95,8 @@ section.theme-project .image-text-text-column .image-text__title {
 section.image-text.bg-white .image-text-text-column .image-text__title {
     color: var(--dark);
 }
+
+
 
 section.image-text .image-text-image-column .image-text-image__wrapper img {
     width: 100%;
