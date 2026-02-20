@@ -1322,7 +1322,11 @@ section.resume article.resume-education .resume-meta__wrapper {
 }
 
 section.resume .button-wrapper {
+    margin-top: calc(40 / 16 * 1rem);
     justify-content: center;
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
     margin-top: calc(40 / 16 * 1rem);
     @media (width >= 48rem) { 
         margin-top: calc(90 / 16 * 1rem);

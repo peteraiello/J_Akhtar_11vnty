@@ -131,9 +131,16 @@ resume:
                 address: "86 North Street, Guildford"
             }
         ]
-    sectionButton: 
-        label: "Download my CV"
-        link: "#"
+    sectionButtons: [
+        {
+            label: "Download my CV",
+            link: "/images/uploads/jamila_akhtar_resume.pdf"
+        },
+        {
+            label: "Download my Portfolio",
+            link: "/images/uploads/jamila_akhtar_portfolio.pdf"
+        }
+    ]
 featuredProjects: 
     title: "Check Out My Projects"
     projects: ["Those Darjeeling Days", "MyEirene Ltd", "Sandancer EP"]

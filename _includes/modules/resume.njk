@@ -134,9 +134,11 @@
                 <!-- / Volunteering end -->
             </div>
         </div>
-    {% if resume.sectionButton %}
+    {% if resume.sectionButtons %}
         <div class="button-wrapper">
-            <a href="{{resume.sectionButton.link}}" class="button button-primary w-border">{{ resume.sectionButton.label}}</a>
+            {%- for button in resume.sectionButtons -%}
+                    <a href="{{button.link}}" class="button button-primary w-border">{{ button.label}}</a>
+            {%- endfor -%}  
         </div>
     {% endif %}
 </section>
